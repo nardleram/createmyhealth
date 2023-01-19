@@ -70,7 +70,7 @@
             </div>
 
             <div class="text-lmhlBg1 rounded-b-md">
-                <p class="text-sm leading-relaxed px-6 pt-3 pb-1">I’m a biblioholic: happy when living between the covers of a book – preferably one that is hardbound and gorgeously illustrated! When confronted by a blank page, however, I’m equally happy to provide my own text and daydreams. Indeed, I hear homeopathy defines health as the freedom to express creativity; every blank page is an opportunity for creating health. In the nonfictional world, I teach, translate, proofread, write and edit, and have several years’ experience in the set-up and management of private medical practices in Germany.</p>
+                <p class="text-sm leading-relaxed px-6 pt-3 pb-1">I’m a biblioholic: happy when living between the covers of a book – preferably one that is hardbound and gorgeously illustrated! When confronted by a blank page, however, I’m equally happy to provide my own text and daydreams. Indeed, I’ve heard homeopathy defines health as the freedom to express creativity. Every blank page is an opportunity for creating health. In the nonfictional world, I teach, translate, proofread, write and edit, and have several years’ experience in the set-up and management of private medical practices in Germany.</p>
                 
                 <p class="text-sm  leading-relaxed px-6 pb-3 rounded-b-md">I am delighted to be on the team of Create My Health CIC and part of the People’s Health Alliance.</p>
             </div>
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <div class="text-lmhlBg1 rounded-b-md">
-                <p class="text-sm leading-relaxed px-6 pt-3 pb-1">My BA is in Philosophy, Psychology and History of Science from the University of Leeds. By day I have a full-time IT job, and pursue my other passions in my spare time: homeopathy at The School of Health, and  martial arts. I love long walks in our local woods and nature reserves, and hiking through the Dales or the Peak District with my wolfdog.</p>
+                <p class="text-sm leading-relaxed px-6 pt-3 pb-1">My BA is in Philosophy, Psychology and History of Science from the University of Leeds. By day I have a full-time IT job, and pursue my other passions in my spare time: homeopathy at The School of Health, and  martial arts. I love long walks in our local woods and nature reserves, and hiking through the Dales or Peak District with my wolfdog.</p>
 
                 <p class="text-sm leading-relaxed px-6 pb-3">I am grateful to have this opportunity of supporting Create My Health CIC and the People’s Health Alliance with my IT skills and my deep interest in all matters pertaining to health.</p>
             </div>
