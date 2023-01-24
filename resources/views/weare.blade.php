@@ -13,7 +13,7 @@
         <div id="Mel" class="mt-5 rounded-md shadow-md bg-lmhlPanel1">
             <div class="w-full h-56 flex flex-row rounded-t-md font-serif bg-gradient-to-b from-mel_profile_bg1 to-mel_profile_bg2">
                 <div class="mr-4 h-56">
-                    <img class="mb-0 min-h-full max-h-full w-48 min-w-[12rem] object-fill rounded-tl-md" src="/storage/images/mel.jpeg" alt="">
+                    <img class="mb-0 min-h-full max-h-full w-48 min-w-[12rem] object-fill rounded-tl-md" src="/storage/images/mel.jpeg" alt="Mel Lagan">
                 </div>
                 <div class="pt-4 min-h-full pr-3">
                     <h4 class="text-lg leading-tight mb-2 tracking-tight text-lmhlPanel">Mel Lagan</h4>
@@ -29,7 +29,7 @@
         <div id="Sarah" class="mt-5 rounded-md shadow-md bg-lmhlPanel2">
             <div class="w-full h-56 flex flex-row rounded-t-md font-serif bg-gradient-to-b from-sarah_profile_bg1 to-sarah_profile_bg2">
                 <div class="mr-4">
-                    <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill" src="/storage/images/sarah.jpeg" alt="">
+                    <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill" src="/storage/images/sarah.jpeg" alt="Sarah Elder">
                 </div>
                 <div class="pt-4 min-h-full pr-3">
                     <h4 class="text-lg leading-tight mb-2 tracking-tight text-lmhlPanel">Sarah Elder</h4>
@@ -45,7 +45,7 @@
         <div id="Liz" class="mt-5 rounded-md shadow-md bg-lmhlPanel3">
             <div class="w-full h-56 flex flex-row rounded-t-md font-serif bg-gradient-to-b from-liz_profile_bg1 to-liz_profile_bg2">
                 <div class="mr-4">
-                    <img class="mb-0 min-h-full rounded-tl-md w-40 object-fill" src="/storage/images/liz.jpeg" alt="">
+                    <img class="mb-0 min-h-full rounded-tl-md w-40 object-fill" src="/storage/images/liz.jpeg" alt="Elizabeth Cooper">
                 </div>
                 <div class="pt-4 min-h-full pr-3">
                     <h4 class="text-lg leading-tight mb-2 tracking-tight text-lmhlPanel">Elizabeth Cooper</h4>
@@ -61,7 +61,7 @@
         <div id="Annette" class="mt-5 rounded-md shadow-md bg-lmhlPanel1">
             <div class="w-full h-56 flex flex-row rounded-t-md font-serif bg-gradient-to-b from-netty_profile_bg1 to-netty_profile_bg2">
                 <div class="mr-4">
-                    <img class="mb-0 min-h-full w-48 object-fill rounded-tl-md" src="/storage/images/annette.jpeg" alt="">
+                    <img class="mb-0 min-h-full w-48 object-fill rounded-tl-md" src="/storage/images/annette.jpeg" alt="Annette Russell">
                 </div>
                 <div class="pt-4 min-h-full pr-3">
                     <h4 class="text-lg leading-tight mb-2 tracking-tight text-lmhlPanel">Annette Russell, MA</h4>
@@ -79,7 +79,7 @@
         <div id="Emily" class="mt-5 rounded-md shadow-md bg-lmhlPanel2">
             <div class="w-full h-56 flex flex-row rounded-t-md font-serif bg-gradient-to-b from-emily_profile_bg1 to-emily_profile_bg2">
                 <div class="mr-4">
-                    <img class="mb-0 min-h-full rounded-tl-md w-40 object-fill" src="/storage/images/emily.jpeg" alt="">
+                    <img class="mb-0 min-h-full rounded-tl-md w-40 object-fill" src="/storage/images/emily.jpeg" alt="Emily Godfrey">
                 </div>
                 <div class="pt-4 min-h-full pr-3">
                     <h4 class="text-lg leading-tight mb-2 tracking-tight text-lmhlPanel">Emily Godfrey</h4>
@@ -94,7 +94,7 @@
         <div id="Anais" class="mt-5 rounded-md shadow-md bg-lmhlPanel3">
             <div class="w-full h-56 flex flex-row rounded-t-md font-serif bg-gradient-to-b from-anais_profile_bg1 to-anais_profile_bg2">
                 <div class="mr-4">
-                    <img class="mb-0 min-h-full rounded-tl-md w-40 object-fill" src="/storage/images/anais.jpeg" alt="">
+                    <img class="mb-0 min-h-full rounded-tl-md w-40 object-fill" src="/storage/images/anais.jpeg" alt="Anaïs Russell">
                 </div>
                 <div class="pt-4 min-h-full pr-3">
                     <h4 class="text-lg leading-tight mb-2 tracking-tight text-lmhlPanel">Anaïs Russell</h4>
@@ -104,7 +104,7 @@
             <div class="text-lmhlBg1 rounded-b-md">
                 <p class="text-sm leading-relaxed px-6 pt-3 pb-1">My BA is in Philosophy, Psychology and History of Science from the University of Leeds. By day I have a full-time IT job, and pursue my other passions in my spare time: homeopathy at The School of Health, and  martial arts. I love long walks in our local woods and nature reserves, and hiking through the Dales or Peak District with my wolfdog.</p>
 
-                <p class="text-sm leading-relaxed px-6 pb-3">I am grateful to have this opportunity of supporting Create My Health CIC and the People’s Health Alliance with my IT skills and my deep interest in all matters pertaining to health.</p>
+                <p class="text-sm leading-relaxed px-6 pb-3">I am grateful to have this opportunity of supporting Create My Health CIC and the People’s Health Alliance with my IT skills and deep interest in all matters pertaining to health.</p>
             </div>
         </div>
     </div>
