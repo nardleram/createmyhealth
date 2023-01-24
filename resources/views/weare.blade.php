@@ -7,7 +7,7 @@
         <img class="w-full" src="/storage/images/calum-lewis-we_are.jpeg" alt="We are image">
     </div>
 
-    <h1 class="font-serif text-5xl text-center mt-12 mb-6 text-lmhlPanel">We are...</h1>
+    <h1 class="font-serif text-5xl text-center mt-12 mb-6 text-lmhlPanel">We are... (website under construction)</h1>
 
     <div class="grid gap-3 lg:gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-3 md:px-5 sm:px-4">
         <div id="Mel" class="mt-5 rounded-md shadow-md bg-lmhlPanel1">
