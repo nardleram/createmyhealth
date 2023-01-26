@@ -22,8 +22,8 @@
             <p class="px-6 py-3 leading-loose">Awaiting text</p>
         </div>
 
-        <div class="hidden liz left-1/4 top-32 bg-lmhlMain1 text-lmhlBg1 font-sans text-sm p-10 w-5/6 md:w-1/2 z-50 rounded-md shadow-md">
-            <h5 class="font-serif text-right font-bold text-2xl -mt-8 -mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('liz')">x</h5>
+        <div class="hidden elizabeth left-1/4 top-32 bg-lmhlMain1 text-lmhlBg1 font-sans text-sm p-10 w-5/6 md:w-1/2 z-50 rounded-md shadow-md">
+            <h5 class="font-serif text-right font-bold text-2xl -mt-8 -mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('elizabeth')">x</h5>
             <h5 class="font-serif text-lg text-lmhlBg1 mb-2 px-6 font-bold">Elizabeth Cooper</h5>
             <p class="px-6 py-3 leading-loose">Awaiting text</p>
         </div>
