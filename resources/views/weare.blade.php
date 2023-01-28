@@ -10,37 +10,37 @@
     <h1 class="font-serif text-5xl text-center mt-12 mb-6 text-lmhlPanel">We are... (website under construction)</h1>
 
     <div class="top-0 left-0 w-full h-full hidden profile-popup-bg z-40 bg-black opacity-95">
-        <div class="hidden mel mx-auto top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
+        <div class="hidden mel mx-auto max-h-70% overflow-y-scroll top-32 pb-4 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
             <h5 class="font-serif text-right font-bold text-2xl -mt-4 -mr-1 md:-mt-8 md:-mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('mel')">x</h5>
             <h5 class="font-serif text-lg text-lmhlBg1 mb-2 px-6 font-bold">Mel Lagan</h5>
             <p class="px-6 py-3 leading-loose">My nursing background is mainly in renal medicine caring for patients with chronic kidney disease. As a holistic therapist, I help people re-establish physical, emotional and mental balance and well-being, drawing on a number of modalities including classic reflexology, RLD (reflexology lymph drainage) and Bach Flower Essences.  I coach people to help them reframe stress and anxiety, recognise unhelpful thought patterns and behaviours and develop resilience in the face of life’s challenges. I am passionate about empowering my clients through education and knowledge sharing so they can begin to take charge of their own health and make lifestyle decisions that will support their well-being.</p>
         </div>
     
-        <div class="hidden sarah mx-auto top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
+        <div class="hidden sarah mx-auto max-h-70% overflow-y-scroll top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
             <h5 class="font-serif text-right font-bold text-2xl -mt-4 -mr-1 md:-mt-8 md:-mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('sarah')">x</h5>
             <h5 class="font-serif text-lg text-lmhlBg1 mb-2 px-6 font-bold">Sarah Elder</h5>
             <p class="px-6 py-3 leading-loose">Awaiting text</p>
         </div>
     
-        <div class="hidden elizabeth mx-auto top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
+        <div class="hidden elizabeth mx-auto max-h-70% overflow-y-scroll top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
             <h5 class="font-serif text-right font-bold text-2xl -mt-4 -mr-1 md:-mt-8 md:-mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('elizabeth')">x</h5>
             <h5 class="font-serif text-lg text-lmhlBg1 mb-2 px-6 font-bold">Elizabeth Cooper</h5>
             <p class="px-6 py-3 leading-loose">Awaiting text</p>
         </div>
     
-        <div class="hidden annette mx-auto top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
+        <div class="hidden annette mx-auto max-h-70% overflow-y-scroll top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
             <h5 class="font-serif text-right font-bold text-2xl -mt-4 -mr-1 md:-mt-8 md:-mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('annette')">x</h5>
             <h5 class="font-serif text-lg text-lmhlBg1 mb-2 px-6 font-bold">Annette Russell</h5>
             <p class="px-6 py-3 leading-loose">I’m a biblioholic: happy when living between the covers of a book – preferably one that is hardbound and gorgeously illustrated! When confronted by a blank page, however, I’m equally happy to provide my own text and daydreams. Indeed, I’ve heard homeopathy defines health as the freedom to express creativity. Every blank page is an opportunity for creating health. In the nonfictional world, I teach, translate, proofread, write and edit, and have several years’ experience in the set-up and management of private medical practices in Germany.</p>
         </div>
     
-        <div class="hidden emily mx-auto top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
+        <div class="hidden emily mx-auto max-h-70% overflow-y-scroll top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
             <h5 class="font-serif text-right font-bold text-2xl -mt-4 -mr-1 md:-mt-8 md:-mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('emily')">x</h5>
             <h5 class="font-serif text-lg text-lmhlBg1 mb-2 px-6 font-bold">Emily Godfrey</h5>
             <p class="px-6 py-3 leading-loose">Awaiting text</p>
         </div>
     
-        <div class="hidden anaïs mx-auto top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
+        <div class="hidden anaïs mx-auto max-h-70% overflow-y-scroll top-32 bg-lmhlMain1 opacity-100 text-lmhlBg1 font-sans text-sm p-4 md:p-10 w-11/12 md:w-4/5 z-50 rounded-md shadow-md">
             <h5 class="font-serif text-right font-bold text-2xl -mt-4 -mr-1 md:-mt-8 md:-mr-4 text-lmhlPanel2 cursor-pointer" onclick="togglePopup('anaïs')">x</h5>
             <h5 class="font-serif text-lg text-lmhlBg1 mb-2 px-6 font-bold">Anaïs Russell</h5>
             <p class="pt-6 px-6 leading-loose">My BA is in Philosophy, Psychology and History of Science from the University of Leeds. By day I have a full-time IT job, and pursue my other passions in my spare time: homeopathy at The School of Health, and  martial arts. I love long walks in our local woods and nature reserves, and hiking through the Dales or Peak District with my wolfdog.</p>

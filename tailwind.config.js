@@ -47,6 +47,9 @@ module.exports = {
       borderWidth: {
         '20': '1.4rem',
       },
+      maxHeight: {
+        '70%': '70%',
+      },
       spacing: {
         '2/5': '40%',
         '3/5': '60%',
