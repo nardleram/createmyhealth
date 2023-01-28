@@ -5,7 +5,7 @@
 <div class="mb-16 mt-24">
     <h1 class="font-serif text-5xl text-center mt-12 mb-6 text-lmhlPanel">(Website under construction)</h1>
     <div>
-        <img class="w-full" src="/storage/images/joanna-kosinska-landing.jpeg" alt="Landing image">
+        <img class="w-full" src="/storage/images/ameen-fahmy-landing.jpeg" alt="Landing image">
     </div>
 
     <div class="text-sm md:text-base p-6 md:p-10 lg:p-20 mb-5">
