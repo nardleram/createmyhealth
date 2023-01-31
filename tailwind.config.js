@@ -62,9 +62,15 @@ module.exports = {
           '70%': { transform: 'scaleY(0.9)' },
           '100%': { transform: 'scaleY(1)' },
         },
+        'open-bio': {
+          '0%': { transform: 'scaleY(0)' },
+          '100%': { transform: 'scaleY(1)' },
+        },
       },
       animation: {
         'open-menu': 'open-menu 0.9s ease-in-out forwards',
+        'open-bio': 'open-bio 0.5s ease-in-out forwards',
+        'open-bio-bg': 'open-bio 0.5s ease-in-out forwards',
       }
     },
   },
