@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    ol {
+        @apply list-inside list-decimal text-sm text-lmhlMainTextColorDark1 pl-4;
+    }
+    ul {
+        @apply list-inside list-disc text-sm text-lmhlMainTextColorDark1 pl-4;
+    }
+    li {
+        @apply mb-2;
+    }
+}

@@ -17,7 +17,7 @@
     </head>
 
     <body class="antialiased bg-lmhlBg1 font-sans text-lmhlMainTextColorDark1">
-        <nav class="fixed top-0 h-24 w-full bg-lmhlBg1 text-lmhlPanel1 flex justify-between items-center z-50 md:px-8 px-4 shadow-sm shadow-lmhlMain1" aria-label="non-mobile">
+        <nav class="absolute top-0 h-24 w-full bg-lmhlBg1 text-lmhlPanel1 flex justify-between items-center z-50 md:px-8 px-4 shadow-sm shadow-lmhlMain1" aria-label="non-mobile">
             <div id="logo" class="w-2/6 z-50">
                 <a href="{{ url('/') }}">
                     <img src="/storage/images/cmh_whole3.svg" alt="logo" class="md:h-16 h-14 min-h-14">
@@ -53,7 +53,7 @@
 
         @yield('content')
 
-        <footer class="bg-lmhlMain1 px-2 py-4 md:px-8 md:py-10">
+        <footer class="w-full bg-lmhlMain1 px-2 py-4 md:px-8 md:py-10">
             <div id="pha" class="flex items-center w-1/3">
                 <div class="w-1/2 mr-2">
                     <h5 class="text-lmhlBg1 text-sm font-light">A proud member of the People's Health Alliance</h5>
