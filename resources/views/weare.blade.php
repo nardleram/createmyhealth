@@ -147,7 +147,9 @@
 
     </div>
 
-    <div class="px-2 py-4 bg-lmhlHighlight1 text-lmhlBg1 text-lg tracking-tight font-bold rounded-lg shadow-md mt-10 w-1/3 text-center mx-auto">Support us</div>
+    <x-button>
+        <x-slot:text>Support us</x-slot>
+    </x-button>
 </div>
 
 @endsection
