@@ -20,7 +20,7 @@
         <nav class="absolute top-0 h-24 w-full bg-lmhlBg1 text-lmhlPanel1 flex justify-between items-center z-50 md:px-8 px-4 shadow-sm shadow-lmhlMain1" aria-label="non-mobile">
             <div id="logo" class="w-2/6 z-50">
                 <a href="{{ url('/') }}">
-                    <img src="/storage/images/cmh_whole3.svg" alt="logo" class="md:h-16 h-14 min-h-14">
+                    <img src="/storage/images/cmh_whole.svg" alt="logo" class="md:h-16 h-14 min-h-14">
                 </a>
             </div>
 
