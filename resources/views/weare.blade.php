@@ -19,7 +19,7 @@
                 Elizabeth Cooper
             </x-slot>
 
-            <x-slot:bio>Awaiting text.</x-slot>
+            <x-slot:bio>I graduated as a nutritional therapist in 2010, after many years of trying different modalities whilst on my own health journey.  Since that time, I have helped many people turn their health around with nutrition and lifestyle changes.  However, there’s often something that stops someone maintaining those changes.  I believe that something is emotional resilience, a fundamental piece of the jigsaw in wellness, and it was this realisation that led me to train as a HeartMath coach and most recently a Forest Bathing guide.  Alongside my clinic, I work as a technical advisor for a probiotics company, providing education in gut health to fellow practitioners and consumers.  I am passionate about being able to pass on my knowledge and experience to empower others to support their own health, physically, mentally, emotionally and spiritually.  Outside of work, I love to explore meditation, get out into nature with my dog (and my kids if I can persuade them to come!) and I’ve just discovered yoga, which is so enjoyable after a day at my desk!  We have a fantastic vision for Create My Health, and I’m really grateful, and excited, to be a part of it. </x-slot>
         </x-director-profile-bio>
 
         <x-director-profile-bio class="mel">
@@ -43,7 +43,7 @@
                 Sarah Elder
             </x-slot>
 
-            <x-slot:bio>Awaiting text.</x-slot>
+            <x-slot:bio>Apparently as a child I took the head off my Tiny Tears doll telling my Mum I wanted to see inside! So I guess it is unsurprising I eventually read Psychology at University and after a six year detour into the world of retail, re-found my early calling training to be a psychotherapist. I have been in this field for over 25 years and love it as much as ever and can happily report no heads have required removal!<br>I feel hugely privileged to accompany someone as they embark upon a path of Self discovery gaining understanding of who they are and answering questions about why they think, feel and act in certain ways. Being a part of someone's transformational journey is always a wonderful and unique experience. I believe it is this uniqueness, of mind, body and spirit that calls for an holistic and integrative approach to health, one size does not fit all. I am therefore delighted to be part of this initiative to create the conditions in which we can all reach our potential and flourish as human beings.</x-slot>
         </x-director-profile-bio>
 
         <x-director-profile-bio class="annette">
@@ -55,7 +55,7 @@
                 Annette Russell, MA
             </x-slot>
 
-            <x-slot:bio>I’m a biblioholic: happy when living between the covers of a book – preferably one that is hardbound and gorgeously illustrated! When confronted by a blank page, however, I’m equally happy to provide my own text and daydreams. Indeed, I’ve heard homeopathy defines health as the freedom to express creativity. Every blank page is an opportunity for creating health. In the nonfictional world, I teach, translate, proofread, write and edit, and have several years’ experience in the set-up and management of private medical practices in Germany.</x-slot>
+            <x-slot:bio>Sun conjunct Mars conjunct Venus in the 9th House in Cancer; Moon conjunct Pluto conjunct Uranus in the 12th House in Virgo square Mercury in Gemini in the 9th House; Libra ascendant.<br>Having revealed that much, I might as well add that I’m a biblioholic: happiest when living between the covers of a book — preferably one that is hardbound and gorgeously illustrated! When confronted by a blank page, however, I’m equally happy to provide my own text and daydreams. Indeed, I’ve heard homeopathy defines health as the freedom to express creativity; having experienced the healing of a chronic illness through Creative Writing for Therapeutic Purposes, I now see every new page as an opportunity for creating health. In the nonfictional world, I teach, translate, proofread, write and edit, and have several years’ experience in the set-up and management of private medical practices in Germany. </x-slot>
         </x-director-profile-bio>
 
         <x-director-profile-bio class="emily">
@@ -92,7 +92,7 @@
 
             <x-slot:name>Elizabeth Cooper</x-slot>
 
-            <x-slot:roles>Co-founder, Director</x-slot>
+            <x-slot:roles>Co-founder, Director, Nutritional Therapist, HeartMath, Forest Therapy</x-slot>
         </x-director-profile-panel>
 
         <x-director-profile-panel class="from-mel_profile_bg1 to-mel_profile_bg2">

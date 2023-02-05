@@ -53,7 +53,14 @@
 
         @yield('content')
 
-        <footer class="w-full bg-lmhlMain1 px-2 py-4 md:px-8 md:py-10">
+        <footer class="w-full bg-lmhlMain1 px-2 py-4 md:px-8 md:py-10 flex items-center">
+            <div id="address" class="w-1/3 text-lmhlBg1 font-light text-sm">
+                <p class="font-bold">Address</p>
+                <p class="leading-snug">Create My Health CIC<br>Headingley Heart Enterprise & Arts Centre<br>Bennett Road<br>LS6 3HN</p>
+                <p><span class="font-bold">Company no:</span> 14434175</p>
+                <p><span class="font-bold">Tel:</span> 07486 708055</p>
+            </div>
+
             <div id="pha" class="flex items-center w-1/3">
                 <div class="w-1/2 mr-2">
                     <h5 class="text-lmhlBg1 text-sm font-light">A proud member of the People's Health Alliance</h5>
