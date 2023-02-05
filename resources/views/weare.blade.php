@@ -31,7 +31,7 @@
                 Mel Lagan
             </x-slot>
 
-            <x-slot:bio>My nursing background is mainly in renal medicine caring for patients with chronic kidney disease. As a holistic therapist, I help people re-establish physical, emotional and mental balance and well-being, drawing on a number of modalities including classic reflexology, RLD (reflexology lymph drainage) and Bach Flower Essences.  I coach people to help them reframe stress and anxiety, recognise unhelpful thought patterns and behaviours and develop resilience in the face of life’s challenges. I am passionate about empowering my clients through education and knowledge sharing so they can begin to take charge of their own health and make lifestyle decisions that will support their well-being.</x-slot>
+            <x-slot:bio>My nursing background is mainly in renal medicine caring for patients with chronic kidney disease. As a holistic therapist, I help people re-establish physical, emotional and mental balance and well-being, drawing on a number of modalities including classic reflexology, RLD (reflexology lymph drainage) and Bach Flower Essences.  I coach people to help them reframe stress and anxiety, recognise unhelpful thought patterns and behaviours and develop resilience in the face of life’s challenges. I am passionate about empowering my clients through education and knowledge sharing so they can begin to take charge of their own health and make lifestyle decisions that will support their well-being.<br>In my free time, I am happiest  roaming the local woodlands, foraging, connecting with mother Earth and making herbal remedies for personal use.</x-slot>
         </x-director-profile-bio>
 
         <x-director-profile-bio class="sarah">

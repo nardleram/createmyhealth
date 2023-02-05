@@ -19,7 +19,7 @@
         <p class="md:leading-loose leading-relaxed text-justify">Create My Health firmly believes in inclusivity and equal access for all, and aims to provide products and services at reduced costs or free of charge, depending on each individual’s financial situation.</p>
     </div>
 
-    <div class="grid gap-6 md:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:px-5">
+    <div class="grid gap-6 md:gap-4 grid-cols-1 md:grid-cols-2 px-2 sm:px-5">
         <div class="mt-5 rounded-md shadow-md bg-lmhlPanel1">
             <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/herbal-tincture.webp" alt="">
             <h4 class="text-center font-serif text-lmhlBg1 text-2xl my-4">Our principles</h4>
@@ -41,11 +41,13 @@
 
         <div class="mt-5 rounded-md shadow-md bg-lmhlPanel2">
             <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/Herbs101_Banner.jpeg" alt="">
-            <h4 class="text-center font-serif text-lmhlBg1 text-2xl my-4">Holistic care</h4>
+            <h4 class="text-center font-serif text-lmhlBg1 text-2xl my-4">Our practice</h4>
             <div class="text-sm text-lmhlBg1 px-5 pb-5 leading-tight font-light">
                 <p class="mb-2">Wellbeing days</p>
                 <p class="mb-2">Drop-in sessions</p>
+                <p class="mb-2">Talks, workshops and classes</p>
                 <p class="mb-2">Therapies and treatments</p>
+                <p class="mb-2">Self-caring skills and empowerment</p>
                 <p class="mb-2">Peer-support circles / health ‘cafés’</p>
                 <p class="mb-2">Informal peer-group sessions focussing on specific wellbeing topics and needs</p>
                 <p class="mb-2">Wide range of services through collaboration with therapists and practitioners</p>
@@ -55,7 +57,7 @@
             </div>
         </div>
 
-        <div class="mt-5 rounded-md shadow-md bg-lmhlPanel3">
+        {{-- <div class="mt-5 rounded-md shadow-md bg-lmhlPanel3">
             <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/tinctures2.jpeg" alt="">
             <h4 class="text-center font-serif text-lmhlBg1 text-2xl my-4">Knowledge sharing</h4>
             <div class="text-sm text-lmhlBg1 px-5 pb-5 leading-tight font-light">
@@ -66,7 +68,7 @@
                 <p class="mb-2">Peer support circles / health ‘cafés’</p>
                 <p class="mb-2">Informal peer-group sessions focussing on specific wellbeing topics and needs</p>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     <x-button>
