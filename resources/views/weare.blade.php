@@ -142,7 +142,7 @@
 
             <x-slot:name>Anaïs Russell</x-slot>
 
-            <x-slot:roles>Fabulous Person Who Understands Tech</x-slot>
+            <x-slot:roles>IT support and administration, Lethal martial-arts koala</x-slot>
         </x-director-profile-panel>
 
     </div>
