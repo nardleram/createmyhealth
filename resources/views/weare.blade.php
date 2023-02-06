@@ -10,13 +10,13 @@
     <h1 class="font-serif text-5xl text-center mt-12 mb-6 text-lmhlPanel">We are... (website under construction)</h1>
 
     <div class="top-0 left-0 w-full h-full hidden profile-popup-bg z-40 bg-black opacity-95 origin-center animate-open-bio-bg">
-        <x-director-profile-bio class="elizabeth">
+        <x-director-profile-bio class="liz">
             <x-slot:className>
-                elizabeth
+                liz
             </x-slot>
 
             <x-slot:fullName>
-                Elizabeth Cooper
+                Liz Cooper
             </x-slot>
 
             <x-slot:bio>I graduated as a nutritional therapist in 2010, after many years of trying different modalities whilst on my own health journey.  Since that time, I have helped many people turn their health around with nutrition and lifestyle changes.  However, there’s often something that stops someone maintaining those changes.  I believe that something is emotional resilience, a fundamental piece of the jigsaw in wellness, and it was this realisation that led me to train as a HeartMath coach and most recently a Forest Bathing guide.  Alongside my clinic, I work as a technical advisor for a probiotics company, providing education in gut health to fellow practitioners and consumers.  I am passionate about being able to pass on my knowledge and experience to empower others to support their own health, physically, mentally, emotionally and spiritually.  Outside of work, I love to explore meditation, get out into nature with my dog (and my kids if I can persuade them to come!) and I’ve just discovered yoga, which is so enjoyable after a day at my desk!  We have a fantastic vision for Create My Health, and I’m really grateful, and excited, to be a part of it. </x-slot>
@@ -43,7 +43,7 @@
                 Sarah Elder
             </x-slot>
 
-            <x-slot:bio>Apparently as a child I took the head off my Tiny Tears doll telling my Mum I wanted to see inside! So I guess it is unsurprising I eventually read Psychology at University and after a six year detour into the world of retail, re-found my early calling training to be a psychotherapist. I have been in this field for over 25 years and love it as much as ever and can happily report no heads have required removal!<br>I feel hugely privileged to accompany someone as they embark upon a path of Self discovery gaining understanding of who they are and answering questions about why they think, feel and act in certain ways. Being a part of someone's transformational journey is always a wonderful and unique experience. I believe it is this uniqueness, of mind, body and spirit that calls for an holistic and integrative approach to health, one size does not fit all. I am therefore delighted to be part of this initiative to create the conditions in which we can all reach our potential and flourish as human beings.</x-slot>
+            <x-slot:bio>Apparently as a child I took the head off my Tiny Tears doll telling my Mum I wanted to see inside! So I guess it is unsurprising I eventually read Psychology at University and after a six year detour into the world of retail, re-found my early calling training to be a psychotherapist. I have been in this field for over 25 years and love it as much as ever and can happily report no heads have required removal!<br>I feel hugely privileged to accompany someone as they embark upon a path of Self discovery gaining understanding of who they are and answering questions about why they think, feel and act in certain ways. Being a part of someone's transformational journey is always a wonderful and unique experience. I believe it is this uniqueness, of mind, body and spirit that calls for an holistic and integrative approach to health, one size does not fit all. I am so delighted to be part of this initiative to create the conditions in which we can all reach our potential and flourish as human beings.</x-slot>
         </x-director-profile-bio>
 
         <x-director-profile-bio class="annette">
@@ -90,7 +90,7 @@
                 <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill rounded-bl-md" src="/storage/images/liz.jpeg" alt="Elizabeth Cooper">
             </x-slot>
 
-            <x-slot:name>Elizabeth Cooper</x-slot>
+            <x-slot:name>Liz Cooper</x-slot>
 
             <x-slot:roles>Co-founder, Director, Nutritional Therapist, HeartMath, Forest Therapy</x-slot>
         </x-director-profile-panel>
@@ -112,7 +112,7 @@
 
             <x-slot:name>Sarah Elder</x-slot>
 
-            <x-slot:roles>Co-founder, Director</x-slot>
+            <x-slot:roles>Co-founder, Director, Psychotherapist</x-slot>
         </x-director-profile-panel>
 
         <x-director-profile-panel class="from-netty_profile_bg1 to-netty_profile_bg2">
@@ -142,7 +142,7 @@
 
             <x-slot:name>Anaïs Russell</x-slot>
 
-            <x-slot:roles>Data control, IT support</x-slot>
+            <x-slot:roles>Fabulous Person Who Understands Tech</x-slot>
         </x-director-profile-panel>
 
     </div>

@@ -53,19 +53,23 @@
 
         @yield('content')
 
-        <footer class="w-full bg-lmhlMain1 px-2 py-4 md:px-8 md:py-10 flex items-center">
-            <div id="address" class="w-1/3 text-lmhlBg1 font-light text-sm">
+        <footer class="w-full bg-lmhlMain1 grid gap-1 grid-cols-1 md:grid-cols-3 p-6 place-items-center">
+
+            <div id="address" class="w-full py-2 text-lmhlBg1 font-light text-sm text-center md:text-left border-b border-lmhlHighlight5 md:border-lmhlMain1">
                 <p class="font-bold">Address</p>
                 <p class="leading-snug">Create My Health CIC<br>Headingley Heart Enterprise & Arts Centre<br>Bennett Road<br>LS6 3HN</p>
-                <p><span class="font-bold">Company no:</span> 14434175</p>
-                <p><span class="font-bold">Tel:</span> 07486 708055</p>
+                <p><span class="font-bold">Company no.:</span> 14434175</p>
+                <p><span class="font-bold">Email:</span> createmyhealth@proton.me</p>
             </div>
 
-            <div id="pha" class="flex items-center w-1/3">
-                <div class="w-1/2 mr-2">
-                    <h5 class="text-lmhlBg1 text-sm font-light">A proud member of the People's Health Alliance</h5>
-                </div>
-                <div>
+            <div id="address" class="w-full py-2 text-lmhlBg1 font-light text-xs text-center md:text-left border-b border-lmhlHighlight5 md:border-lmhlMain1">
+                <p class="mb-2"><span class="font-bold">Website design and hosting:</span> Toby Russell tobyrussell@protonmail.com</p>
+                <p class="mb-2"><span class="font-bold">Site photography:</span> "Home": Ameen Fahny, "We are...": Calum Lewis</p>
+                <p class="mb-2"><span class="font-bold">Site text and editing:</span> Toby Russell, Annette Russell (annettegrussell@icloud.com)</p>
+            </div>
+
+            <div id="pha" class="py-2 flex flex-col items-center w-full">
+                <div class="mb-3">
                     <a href="https://the-pha.org/">
                         <svg class="h-24 w-auto inline-block cursor-pointer" width="100%" height="100%" viewBox="0 0 235 253" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                             <g transform="matrix(1,0,0,1,-21,-167)">
@@ -131,7 +135,12 @@
                         </svg>
                     </a>
                 </div>
+
+                <div class="w-full mr-2">
+                    <h5 class="text-lmhlBg1 text-sm font-light text-center">A proud member of<br>People's Health Alliance</h5>
+                </div>
             </div>
+
         </footer>
     </body>
 </html>

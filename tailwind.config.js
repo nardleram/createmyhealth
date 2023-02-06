@@ -23,6 +23,7 @@ module.exports = {
         'lmhlHighlight2': 'rgb(215, 92, 24)',
         'lmhlHighlight3': 'rgb(60, 156, 102)',
         'lmhlHighlight4': 'rgb(50, 140, 89)',
+        'lmhlHighlight5': 'rgb(173, 43, 110)',
         'lmhlPanel': 'rgb(59, 68, 71)',
         'lmhlPanel1': 'rgb(29, 61, 77)',
         'lmhlPanel2': 'rgb(62, 81, 61)',
