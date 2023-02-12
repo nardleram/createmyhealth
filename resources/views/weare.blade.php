@@ -67,7 +67,7 @@
                 Emily Godfrey
             </x-slot>
 
-            <x-slot:bio>Awaiting text.</x-slot>
+            <x-slot:bio>I have worked in the voluntary and community sector for most of my life in many different roles, working with communities to develop and run a myriad of projects. I retrained in 2019 as a complementary therapist after starting my own business making natural wellbeing products of which I am totally hooked on! I’m really pleased to be a part of the Leeds Create My Health group and support the work of the People’s Health Alliance.</x-slot>
         </x-director-profile-bio>
 
         <x-director-profile-bio class="anaïs">
@@ -127,7 +127,7 @@
 
         <x-director-profile-panel class="from-emily_profile_bg1 to-emily_profile_bg2">
             <x-slot:profilepic>
-                <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill rounded-bl-md" src="/storage/images/emily.jpeg" alt="Emily Godfrey">
+                <img class="mb-0 min-h-full rounded-tl-md w-48 min-w-[12rem] object-fill rounded-bl-md" src="/storage/images/emily2.jpeg" alt="Emily Godfrey">
             </x-slot>
 
             <x-slot:name>Emily Godfrey</x-slot>
