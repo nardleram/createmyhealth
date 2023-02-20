@@ -53,7 +53,7 @@
                 <p class="mb-2">Wide range of services through collaboration with therapists and practitioners</p>
                 <p class="mb-2">Cooperation with local community organisations, health services and charities</p>
                 <p class="mb-2">Health-care products for sale or free of charge</p>
-                <p class="mb-2">Health-care equipment available on loan or gifted</p>
+                <p class="mb-2">Health-care equipment available on loan or gifted (to come)</p>
             </div>
         </div>
 
