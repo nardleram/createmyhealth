@@ -21,7 +21,7 @@
 
     <div class="grid gap-6 md:gap-4 grid-cols-1 md:grid-cols-2 px-2 sm:px-5">
         <div class="mt-5 rounded-md shadow-md bg-lmhlPanel1">
-            <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/jeremy-bishop-principles.jpeg" alt="">
+            <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/sapling_principles.jpeg" alt="">
             <h4 class="text-center font-serif text-lmhlBg1 text-2xl my-4">Our principles</h4>
             <div class="text-sm text-lmhlBg1 px-5 pb-5 leading-tight font-light">
                 <p class="mb-2">Treat everyone with dignity and respect</p>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="mt-5 rounded-md shadow-md bg-lmhlPanel2">
-            <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/Herbs101_Banner.jpeg" alt="">
+            <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/oak_practice.jpeg" alt="">
             <h4 class="text-center font-serif text-lmhlBg1 text-2xl my-4">Our practice</h4>
             <div class="text-sm text-lmhlBg1 px-5 pb-5 leading-tight font-light">
                 <p class="mb-2">Wellbeing days</p>
