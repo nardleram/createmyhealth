@@ -147,9 +147,9 @@
 
     </div>
 
-    <x-button>
+    {{-- <x-button>
         <x-slot:text>Support us</x-slot>
-    </x-button>
+    </x-button> --}}
 </div>
 
 @endsection

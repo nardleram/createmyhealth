@@ -21,8 +21,8 @@ Route::get('/weare', function () {
     return view('weare');
 });
 
-Route::get('/education', function () {
-    return view('education');
+Route::get('/learning', function () {
+    return view('learning');
 });
 
 Route::get('/events', function () {

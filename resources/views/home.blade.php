@@ -4,7 +4,7 @@
 
 <div class="mb-16 mt-24">
     <div>
-        <img class="w-full" src="/storage/images/ameen-fahmy-landing.jpeg" alt="Landing image">
+        <img class="w-full" src="/storage/images/ameen-fahmy-landing-Confucius.jpeg" alt="Landing image">
     </div>
 
     <div class="text-sm md:text-base p-6 md:p-10 lg:p-20 mb-5">
@@ -55,24 +55,11 @@
                 <p class="mb-2">Health-care equipment available on loan or gifted (to come)</p>
             </div>
         </div>
-
-        {{-- <div class="mt-5 rounded-md shadow-md bg-lmhlPanel3">
-            <img class="w-full mb-0 object-cover h-56 rounded-t-md" src="/storage/images/tinctures2.jpeg" alt="">
-            <h4 class="text-center font-serif text-lmhlBg1 text-2xl my-4">Knowledge sharing</h4>
-            <div class="text-sm text-lmhlBg1 px-5 pb-5 leading-tight font-light">
-                <p class="mb-2">Talks, workshops and classes</p>
-                <p class="mb-2">Wellbeing and awareness events</p>
-                <p class="mb-2">Self-caring skills and empowerment</p>
-                <p class="mb-2">Drop-in sessions and classes</p>
-                <p class="mb-2">Peer support circles / health ‘cafés’</p>
-                <p class="mb-2">Informal peer-group sessions focussing on specific wellbeing topics and needs</p>
-            </div>
-        </div> --}}
     </div>
 
-    <x-button>
+    {{-- <x-button>
         <x-slot:text>Support us</x-slot>
-    </x-button>
+    </x-button> --}}
 </div>
 
 @endsection

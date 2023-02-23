@@ -32,7 +32,7 @@
                     <a href="{{ url('/weare') }}" class="font-light text-center pt-7 tracking-wide hover:text-lmhlPanel2 cursor-pointer transition-colors delay-100 duration-250">we are</a>
                 </div>
                 <div class="w-1/6">
-                    <a href="{{ url('/education') }}" class="font-light text-center pt-7 tracking-wide hover:text-lmhlPanel2 cursor-pointer transition-colors delay-100 duration-250">education</a>
+                    <a href="{{ url('/learning') }}" class="font-light text-center pt-7 tracking-wide hover:text-lmhlPanel2 cursor-pointer transition-colors delay-100 duration-250">learning</a>
                 </div>
                 <div class="w-1/6">
                     <a href="{{ url('/events') }}" class="font-light text-center pt-7 tracking-wide hover:text-lmhlPanel2 cursor-pointer transition-colors delay-100 duration-250">events</a>
