@@ -7,7 +7,7 @@
         <img class="w-full" src="/storage/images/calum-lewis-we_are.jpeg" alt="We-are image">
     </div>
 
-    <h1 class="font-serif text-5xl text-center mt-12 mb-6 text-lmhlPanel">We are... (website under construction)</h1>
+    <h1 class="font-serif text-5xl text-center mt-12 mb-6 text-lmhlPanel">We are...</h1>
 
     <div class="top-0 left-0 w-full h-full hidden profile-popup-bg z-40 bg-black opacity-95 origin-center animate-open-bio-bg">
         <x-director-profile-bio class="liz">

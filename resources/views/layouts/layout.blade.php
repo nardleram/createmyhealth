@@ -63,7 +63,7 @@
             </div>
 
             <div id="address" class="w-full py-2 text-lmhlBg1 font-light text-xs text-center md:text-left border-b border-lmhlHighlight5 md:border-lmhlMain1">
-                <p class="mb-2"><span class="font-bold">Website design and hosting:</span> Toby Russell tobyrussell@protonmail.com</p>
+                <p class="mb-2"><span class="font-bold">Website design and hosting:</span> Toby Russell (tobyrussell@protonmail.com)</p>
                 <p class="mb-2"><span class="font-bold">Site photography:</span> "Home": Ameen Fahny, "We are...": Calum Lewis</p>
                 <p class="mb-2"><span class="font-bold">Site text and editing:</span> Annette Russell (annettegrussell@icloud.com), Toby Russell</p>
             </div>
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="w-full mr-2">
-                    <h5 class="text-lmhlBg1 text-sm font-light text-center">A proud member of<br>People's Health Alliance</h5>
+                    <h5 class="text-lmhlBg1 text-sm font-light text-center">A proud member of<br>The People's Health Alliance</h5>
                 </div>
             </div>
 
