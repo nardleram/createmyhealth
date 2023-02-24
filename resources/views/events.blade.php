@@ -58,7 +58,7 @@
 
         <x-event-card>
             <x-slot:image>
-                <img class="mb-0 min-h-full rounded-tl-md object-cover" src="/storage/images/ameen-fahmy-landing-blank-event.jpeg" alt="Event filler image">
+                <img class="mb-0 min-h-full rounded-tl-md object-cover" src="/storage/images/ameen-fahmy-event.jpeg" alt="Event filler image">
             </x-slot>
 
             <x-slot:name>More events in the works!</x-slot>
