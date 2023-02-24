@@ -47,7 +47,7 @@
         <nav id="mobile-menu" class="text-lmhlBg1 sm:hidden hidden flex-col items-center min-h-screen absolute top-24 text-center bg-lmhlPanel1 opacity-90 w-full pt-10 text-3xl z-10 origin-top animate-open-menu" aria-label="mobile">
             <a href="{{ url('/') }}" class="h-12 w-full pt-1 mb-8 font-light hover:bg-lmhlPanel1 hover:text-lmhlMenuTextFocus transition-colors delay-100 duration-250">home</a>
             <a href="{{ url('/weare') }}" class="h-12 w-full pt-1 mb-8 font-light hover:bg-lmhlPanel1 opacity-80 hover:text-lmhlMenuTextFocus transition-colors delay-100 duration-250">we are</a>
-            <a href="{{ url('/education') }}" class="h-12 w-full pt-1 mb-8 font-light hover:bg-lmhlPanel1 opacity-80 hover:text-lmhlMenuTextFocus transition-colors delay-100 duration-250">education</a>
+            <a href="{{ url('/learning') }}" class="h-12 w-full pt-1 mb-8 font-light hover:bg-lmhlPanel1 opacity-80 hover:text-lmhlMenuTextFocus transition-colors delay-100 duration-250">learning</a>
             <a href="{{ url('/events') }}" class="h-12 w-full pt-1 mb-8 font-light hover:bg-lmhlPanel1 opacity-80 hover:text-lmhlMenuTextFocus transition-colors delay-100 duration-250">events</a>
         </nav> 
 
