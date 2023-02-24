@@ -85,7 +85,7 @@
 
     <div class="grid gap-3 lg:gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-3 md:px-5 sm:px-4">
 
-        <x-director-profile-panel class="from-liz_profile_bg1 to-liz_profile_bg2">
+        <x-director-profile-card class="from-liz_profile_bg1 to-liz_profile_bg2">
             <x-slot:profilepic>
                 <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill rounded-bl-md" src="/storage/images/liz.jpeg" alt="Elizabeth Cooper">
             </x-slot>
@@ -93,9 +93,9 @@
             <x-slot:name>Liz Cooper</x-slot>
 
             <x-slot:roles>Co-founder, Director, Nutritional Therapist, HeartMath, Forest Therapy</x-slot>
-        </x-director-profile-panel>
+        </x-director-profile-card>
 
-        <x-director-profile-panel class="from-mel_profile_bg1 to-mel_profile_bg2">
+        <x-director-profile-card class="from-mel_profile_bg1 to-mel_profile_bg2">
             <x-slot:profilepic>
                 <img class="mb-0 min-h-full max-h-full w-48 min-w-[12rem] object-fill rounded-tl-md  rounded-bl-md" src="/storage/images/mel.jpeg" alt="Mel Lagan">
             </x-slot>
@@ -103,9 +103,9 @@
             <x-slot:name>Mel Lagan</x-slot>
 
             <x-slot:roles>Co-founder, Director, Nurse, Reflexology, HeartMath, Bach Flower Essences, Earthing</x-slot>
-        </x-director-profile-panel>
+        </x-director-profile-card>
 
-        <x-director-profile-panel class="from-sarah_profile_bg1 to-sarah_profile_bg2">
+        <x-director-profile-card class="from-sarah_profile_bg1 to-sarah_profile_bg2">
             <x-slot:profilepic>
                 <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill rounded-bl-md" src="/storage/images/sarah.jpeg" alt="Sarah Elder">
             </x-slot>
@@ -113,9 +113,9 @@
             <x-slot:name>Sarah Elder</x-slot>
 
             <x-slot:roles>Co-founder, Director, Psychotherapist</x-slot>
-        </x-director-profile-panel>
+        </x-director-profile-card>
 
-        <x-director-profile-panel class="from-netty_profile_bg1 to-netty_profile_bg2">
+        <x-director-profile-card class="from-netty_profile_bg1 to-netty_profile_bg2">
             <x-slot:profilepic>
                 <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill rounded-bl-md" src="/storage/images/annette.jpeg" alt="Annette Russell">
             </x-slot>
@@ -123,9 +123,9 @@
             <x-slot:name>Annette Russell, MA</x-slot>
 
             <x-slot:roles>Co-founder, Director</x-slot>
-        </x-director-profile-panel>
+        </x-director-profile-card>
 
-        <x-director-profile-panel class="from-emily_profile_bg1 to-emily_profile_bg2">
+        <x-director-profile-card class="from-emily_profile_bg1 to-emily_profile_bg2">
             <x-slot:profilepic>
                 <img class="mb-0 min-h-full rounded-tl-md w-48 min-w-[12rem] object-fill rounded-bl-md" src="/storage/images/emily2.jpeg" alt="Emily Godfrey">
             </x-slot>
@@ -133,9 +133,9 @@
             <x-slot:name>Emily Godfrey</x-slot>
 
             <x-slot:roles>Co-founder, Director</x-slot>
-        </x-director-profile-panel>
+        </x-director-profile-card>
 
-        <x-director-profile-panel class="from-anais_profile_bg1 to-anais_profile_bg2">
+        <x-director-profile-card class="from-anais_profile_bg1 to-anais_profile_bg2">
             <x-slot:profilepic>
                 <img class="mb-0 min-h-full rounded-tl-md w-40 min-w-[10rem] object-fill rounded-bl-md" src="/storage/images/anais.jpeg" alt="Anaïs Russell">
             </x-slot>
@@ -143,7 +143,7 @@
             <x-slot:name>Anaïs Russell</x-slot>
 
             <x-slot:roles>IT support and administration, Lethal martial-arts koala</x-slot>
-        </x-director-profile-panel>
+        </x-director-profile-card>
 
     </div>
 

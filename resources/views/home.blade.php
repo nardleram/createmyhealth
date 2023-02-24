@@ -4,7 +4,7 @@
 
 <div class="mb-16 mt-24">
     <div>
-        <img class="w-full" src="/storage/images/ameen-fahmy-landing-Confucius.jpeg" alt="Landing image">
+        <img class="w-full" src="/storage/images/ameen-fahmy-landing.jpeg" alt="Landing image">
     </div>
 
     <div class="text-sm md:text-base p-6 md:p-10 lg:p-20 mb-5">
