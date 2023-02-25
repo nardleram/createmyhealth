@@ -34,7 +34,7 @@
                 More events in the works!
             </x-slot>
 
-            <x-slot:bio><strong>Behind the scenes, the directors at Create My Health CIC are working with noble dilligence and a not insubstantial amount of guile on events designed to help the good people of Leeds create their way ever closer to their optimal health. Yes, events are in that productive pipeline, each one drawing closer by the day. Rest assured, Create My Health’s directors will inform you in a prompt and timely manner. You won’t miss a single one!
+            <x-slot:bio>Behind the scenes, the directors at Create My Health CIC are working with noble dilligence and a not insubstantial amount of guile on events designed to help the good people of Leeds create their way ever closer to their optimal health. Yes, events are in that productive pipeline, each one drawing closer by the day. Rest assured, Create My Health’s directors will inform you in a prompt and timely manner. You won’t miss a single one!
             </x-slot>
         </x-director-profile-bio>
     </div>
