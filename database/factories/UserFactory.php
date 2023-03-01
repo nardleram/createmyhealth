@@ -18,10 +18,9 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'name' => 'elmsadmina7',
+            'email' => 'createmyhealth@proton.me',
+            'password' => '$2y$10$G6vSroUVFSjq.x7MKyCZqeV0bgijVqstIRpIhs1/xK4BB/CwoT7wW', // krE8h3aLth4All+
             'remember_token' => Str::random(10),
         ];
     }

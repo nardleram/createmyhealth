@@ -55,6 +55,16 @@
 
         <footer class="w-full bg-lmhlMain1 grid gap-1 grid-cols-1 md:grid-cols-3 p-6 place-items-center">
 
+            <div id="photographerDeetz" class="hidden bg-white w-48 max-h-24 overflow-y-scroll p-2 shadow-md rounded-md z-50">
+                @foreach ($photos as $photo)
+                    <div class="flex items-center justify-between mb-2">
+                        <p class="text-xs text-slate-600">{{ $photo->photographer }}</p>
+                        <a href="{{ $photo->license }}" class="text-xs font-semibold text-lmhlHighlight5">License</a>
+                    </div>
+                    <hr class="mb-2 -mt-1">
+                @endforeach
+            </div>
+
             <div id="address" class="w-full py-2 text-lmhlBg1 font-light text-sm text-center md:text-left border-b border-lmhlHighlight5 md:border-lmhlMain1">
                 <p class="font-bold">Address</p>
                 <p class="leading-snug">Create My Health CIC<br>Headingley Heart Enterprise & Arts Centre<br>Bennett Road<br>LS6 3HN</p>
@@ -62,9 +72,9 @@
                 <p><span class="font-bold">Email:</span> createmyhealth@proton.me</p>
             </div>
 
-            <div id="address" class="w-full py-2 text-lmhlBg1 font-light text-xs text-center md:text-left border-b border-lmhlHighlight5 md:border-lmhlMain1">
+            <div id="credits" class="w-full py-2 text-lmhlBg1 font-light text-xs text-center md:text-left border-b border-lmhlHighlight5 md:border-lmhlMain1">
                 <p class="mb-2"><span class="font-bold">Website design and hosting:</span> Toby Russell (tobyrussell@protonmail.com)</p>
-                <p class="mb-2"><span class="font-bold">Site photography:</span> "Home": Ameen Fahny, "We are...": Calum Lewis</p>
+                <p class="mb-2"><span class="font-bold">Site photography:</span> “Home”: <span onclick="toggleHomePhotographersPopup(event)" id="viewDeetz" class="font-semibold text-white hover:text-slate-200 cursor-pointer transition-colors delay-100 duration-250">view details</span>; “We are”: Calum Lewis; “Events”: Some Guy</p>
                 <p class="mb-2"><span class="font-bold">Site text and editing:</span> Annette Russell (annettegrussell@icloud.com), Toby Russell</p>
             </div>
 
@@ -144,3 +154,25 @@
         </footer>
     </body>
 </html>
+
+<script type="text/javascript" defer>
+    let showPhotoDeetz = false
+
+    const toggleHomePhotographersPopup = (event) => {
+        showPhotoDeetz = !showPhotoDeetz
+
+        var elView = document.getElementById('viewDeetz')
+        var elDeetz = document.getElementById("photographerDeetz")
+        var elStyle = document.getElementById("photographerDeetz").style
+
+        elStyle.top = event.clientY + 8 + "px"
+        elStyle.left = event.clientX + "px"
+
+        elDeetz.classList.toggle('hidden')
+        elDeetz.classList.toggle('fixed')
+
+        showPhotoDeetz 
+        ? elView.innerText = 'hide details'
+        : elView.innerText = 'view details'
+    }
+</script>
