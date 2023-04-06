@@ -10,6 +10,19 @@
     <h1 class="font-serif text-3xl text-center mt-8">Events</span></h1>
 
     <div class="top-0 left-0 w-full h-full hidden profile-popup-bg z-40 bg-black opacity-95 origin-center animate-open-bio-bg">
+        <x-director-profile-bio class="create">
+            <x-slot:className>
+                create
+            </x-slot>
+
+            <x-slot:fullName>
+                Create My Health Open Day
+            </x-slot>
+
+            <x-slot:bio><strong>Our inaugural Open Day! This is our opportunity to introduce ourselves and our vision for a more organic and <em>human</em> health-care provision – for the people and by the people – to you. As a proud member of the <a href="https://www.ecclesallfirstaidtraining.co.uk/Emergencyfirstaid" class="font-semibold text-lmhlHighlight3 hover:text-lmhlHighlight4" target="_blank" rel="noopener noreferrer transition-colors delay-100 duration-250">People’s Health Alliance</a>, we share its ambitions and hopes for a healthier tomorrow, for everyone. Come in and meet us, chat with us, and learn more about our plans. 
+            </x-slot>
+        </x-director-profile-bio>
+
         <x-director-profile-bio class="emergency">
             <x-slot:className>
                 emergency
@@ -22,7 +35,6 @@
             <x-slot:bio><strong>The QA Level 3 Award in Emergency at Work (RFQ)</strong> qualification is designed for individuals who wish to take on the role of an emergency first aider in their workplace. Successful course completion  equips candidates with the skills required to give safe, prompt and effective first aid in an emergency situation.<br>
             <a href="https://www.ecclesallfirstaidtraining.co.uk/Emergencyfirstaid" class="font-semibold text-lmhlHighlight3 hover:text-lmhlHighlight4" target="_blank" rel="noopener noreferrer transition-colors delay-100 duration-250">Visit company website</a> 
             </x-slot>
-        
         </x-director-profile-bio>
 
         <x-director-profile-bio class="more">
@@ -40,6 +52,19 @@
     </div>
 
     <div class="grid gap-3 lg:gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 px-3 md:px-5 sm:px-4 mt-4">
+        <x-event-card>
+            <x-slot:image>
+                <img class="mb-0 min-h-full rounded-tl-md object-cover" src="/storage/images/openDay.png" alt="Open day poster">
+            </x-slot>
+
+            <x-slot:name>Create My Health Open Day</x-slot>
+
+            <x-slot:description>
+                <p class="text-xs font-sans mb-2">Saturday 22 April 2023</p>
+                <p class="text-xs font-sans mb-2">14:00 – 16:00</p>
+                <p class="text-xs font-sans mb-2">Clifton Village Hall, Otley, LS21 2ES</p>
+            </x-slot>
+        </x-event-card>
 
         <x-event-card>
             <x-slot:image>
