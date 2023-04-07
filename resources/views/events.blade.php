@@ -7,7 +7,7 @@
         <img class="w-full" src="/storage/images/events.jpeg" alt="Events image">
     </div>
 
-    <h1 class="font-serif text-3xl text-center mt-8">Events</span></h1>
+    <h1 class="font-serif text-3xl text-center my-8">Events</span></h1>
 
     <div class="top-0 left-0 w-full h-full hidden profile-popup-bg z-40 bg-black opacity-95 origin-center animate-open-bio-bg">
         <x-director-profile-bio class="create">
@@ -19,7 +19,7 @@
                 Create My Health Open Day
             </x-slot>
 
-            <x-slot:bio><strong>Our inaugural Open Day! This is our opportunity to introduce ourselves and our vision for a more organic and <em>human</em> health-care provision – for the people and by the people – to you. As a proud member of the <a href="https://the-pha.org/" class="font-semibold text-lmhlHighlight3 hover:text-lmhlHighlight4" target="_blank" rel="noopener noreferrer transition-colors delay-100 duration-250">People’s Health Alliance</a>, we share its ambitions and hopes for a healthier tomorrow, for everyone. Come in and meet us, chat with us, and learn more about our plans. 
+            <x-slot:bio>Our inaugural Open Day! This is our opportunity to introduce ourselves and our vision for a more organic and <em>human</em> health-care provision – for the people and by the people – to you. As a proud member of the <a href="https://the-pha.org/" class="font-semibold text-lmhlHighlight3 hover:text-lmhlHighlight4" target="_blank" rel="noopener noreferrer transition-colors delay-100 duration-250">People’s Health Alliance</a>, we share its ambitions and hopes for a healthier tomorrow, for everyone. Come in and meet us, chat with us, and learn more about our plans.
             </x-slot>
         </x-director-profile-bio>
 
@@ -51,10 +51,10 @@
         </x-director-profile-bio>
     </div>
 
-    <div class="grid gap-3 lg:gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 px-3 md:px-5 sm:px-4 mt-4">
+    <div class="grid gap-3 lg:gap-12 xl:gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-3 md:px-5 sm:px-4">
         <x-event-card>
             <x-slot:image>
-                <img class="mb-0 min-h-full rounded-tl-md object-cover" src="/storage/images/openDay.png" alt="Open day poster">
+                <img class="mb-0 min-h-full rounded-tl-md object-fill" src="/storage/images/openDay.png" alt="Open day poster">
             </x-slot>
 
             <x-slot:name>Create My Health Open Day</x-slot>
@@ -68,7 +68,7 @@
 
         <x-event-card>
             <x-slot:image>
-                <img class="mb-0 min-h-full rounded-tl-md object-cover" src="/storage/images/firstAiderCourse.png" alt="First-aider course poster">
+                <img class="mb-0 min-h-full rounded-tl-md object-fill" src="/storage/images/firstAiderCourse.png" alt="First-aider course poster">
             </x-slot>
 
             <x-slot:name>Emergency First Aid at Work (Level 3)</x-slot>

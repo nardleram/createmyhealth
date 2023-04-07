@@ -3,9 +3,9 @@
     'description'
 ])
 
-<div class="w-full mt-5 rounded-md shadow-md md:max-w-lg mx-auto h-56">
+<div class="max-w-lg min-w-[512px] md:min-w-full lg:max-w-lg rounded-md shadow-md mx-auto h-56">
 
-    <div {{ $attributes->merge(['class' => 'w-full bg-white md:max-w-lg h-56 flex flex-row rounded-md font-serif bg-gradient-to-b']) }}>
+    <div {{ $attributes->merge(['class' => 'bg-white h-56 flex flex-row rounded-md font-serif']) }}>
 
         <div class="mr-4 max-h-56 w-40 min-w-[160px] overflow-y-hidden rounded-bl-md">
             {{ $image }}
