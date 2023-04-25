@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         'lmhlBg1': 'rgb(226, 226, 224)',
+        'lmhlBgInput': 'rgb(243, 243, 243)',
         'lmhlMain1': 'rgb(127, 48, 89)',
         'lmhlMain': 'rgb(106, 66, 78)',
         'lmhlMain2': 'rgb(70, 111, 115)',
@@ -34,6 +35,7 @@ module.exports = {
         'lmhlPanel6': 'rgb(145, 129, 114)',
         'lmhlMainTextColorDark1': 'rgb(29, 38, 39)',
         'lmhlMenuTextFocus': 'rgb(213, 146, 244)',
+        'cmhLogoGreen': 'rgb(51, 140, 89)',
         'mel_profile_bg1': 'rgb(246, 239, 232)',
         'mel_profile_bg2': 'rgb(232, 228, 226)',
         'sarah_profile_bg1': 'rgb(247, 241, 233)',

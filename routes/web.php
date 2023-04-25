@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AffiliateController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
@@ -29,3 +30,6 @@ Route::post('/photoze/store', [PhotoController::class, 'store'])->middleware('au
 Route::get('/photoze/edit/{photo}', [PhotoController::class, 'edit'])->middleware('auth')->name('editPhoto');
 Route::put('/photoze/{photo}', [PhotoController::class, 'update'])->middleware('auth')->name('updatePhoto');
 Route::delete('/photoze/delete/{photo}', [PhotoController::class, 'destroy'])->middleware('auth')->name('deletePhoto');
+
+Route::get('/apply2affiliate', [AffiliateController::class, 'index'])->name('affiliate');
+Route::post('/apply2affiliate/add', [AffiliateController::class, 'send'])->name('addAffiliate');

@@ -147,7 +147,7 @@
                 </div>
 
                 <div class="w-full mr-2">
-                    <h5 class="text-lmhlBg1 text-sm font-light text-center">A proud member of<br>The People's Health Alliance</h5>
+                    <h5 class="text-lmhlBg1 text-sm font-light text-center">A proud member of<br>The People’s Health Alliance</h5>
                 </div>
             </div>
 
