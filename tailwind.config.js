@@ -36,6 +36,7 @@ module.exports = {
         'lmhlMainTextColorDark1': 'rgb(29, 38, 39)',
         'lmhlMenuTextFocus': 'rgb(213, 146, 244)',
         'cmhLogoGreen': 'rgb(51, 140, 89)',
+        'cmhLogoDarkGreen': 'rgb(41, 112, 72)',
         'mel_profile_bg1': 'rgb(246, 239, 232)',
         'mel_profile_bg2': 'rgb(232, 228, 226)',
         'sarah_profile_bg1': 'rgb(247, 241, 233)',

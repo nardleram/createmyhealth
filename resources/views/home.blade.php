@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="mb-16 mt-24">
+<div class="mb-10 mt-24">
     <div>
         <img class="w-full" src="/storage/{{ $photo->name }}" alt="Landing image">
     </div>
@@ -56,6 +56,22 @@
             </div>
         </div>
     </div>
+
+    <x-big-link>
+        <x-slot:url>{{ url('/apply2affiliate') }}</x-slot>
+
+        <x-slot:target>_self</x-slot>
+    
+        <x-slot:text>Support us</x-slot>
+    </x-big-link>
+
+    <x-big-link>
+        <x-slot:url>https://www.surveymonkey.co.uk/r/7DY9H76</x-slot>
+
+        <x-slot:target>_blank</x-slot>
+    
+        <x-slot:text>Take our survey</x-slot>
+    </x-big-link>
 
     {{-- <x-button>
         <x-slot:text>Support us</x-slot>
