@@ -20,6 +20,10 @@ Route::get('/events', function () {
     return view('events');
 });
 
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
 Route::get('/photoze/jumpin', [LoginController::class, 'login'])->name('login');
 Route::post('/photoze/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
 Route::get('/photoze/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
