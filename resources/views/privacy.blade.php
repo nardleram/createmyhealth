@@ -29,7 +29,7 @@
 
         <p class="my-2">Via a practitioner directory, volunteer database and newsletter.</p>
 
-        <p class="my-2">To disseminate information from Create My Health CIC (CMH), for example to add your details to our practitioner directory so potential clients can view, to notify you of volunteer roles and update you about CMH via our newsletter.</p>
+        <p class="my-2">To disseminate information from Create My Health CIC (CMH) – for example to add your details to our practitioner directory for potential clients to view –, to notify you of volunteer roles and update you about CMH via our newsletter.</p>
 
         <p class="my-2">We will use the information that you have given us in order to carry out the above activities.</p>
 
