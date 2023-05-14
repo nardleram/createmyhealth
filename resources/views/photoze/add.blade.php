@@ -1,7 +1,6 @@
 @extends('layouts.photo-layout')
 
 @section('content')
-{{$yaaay = null;}}
 
 <div class="absolute top-5 left-5 z-50 px-8 py-2 bg-slate-500 text-lmhlBg1 rounded-md shadow-md hover:bg-slate-600 transition-colors delay-100 duration-250">
     <a href="{{ route('photoze') }}" as="button">Show photos</a>

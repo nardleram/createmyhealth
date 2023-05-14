@@ -17,7 +17,7 @@
         <p class="md:leading-loose leading-relaxed text-justify">If our and The PHA’s vision of a more organic, more <em>human</em> way of organising health care and empowering health independence appeals to you, perhaps you would like to help. Please complete the form below, and we’ll get in touch with you to discuss how we might collaborate.</p>
     </div>
         
-    <form action="{{ route('addAffiliate') }}" method="POST" class="w-full mt-12 sm:w-11/12 lg:w-5/6 lg:max-w-xl lg:p-8 p-4 mx-auto flex flex-col items-center justify-between rounded-lg shadow-md border border-slate-300">
+    <form action="{{ route('addAffiliate') }}" method="POST" class="cmhForm">
         @csrf
 
         <h2 class="mb-5 text-xl font-semibold tracking-tight text-center text-slate-800">Your contact details and message</h2>

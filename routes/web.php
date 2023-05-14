@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\AffiliateController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\SurveyController;
+use App\Http\Controllers\AffiliateController;
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -37,3 +38,7 @@ Route::delete('/photoze/delete/{photo}', [PhotoController::class, 'destroy'])->m
 
 Route::get('/apply2affiliate', [AffiliateController::class, 'index'])->name('affiliate');
 Route::post('/apply2affiliate/add', [AffiliateController::class, 'send'])->name('addAffiliate');
+
+Route::get('/survey/vyoo', [SurveyController::class, 'index'])->middleware('auth')->name('vyooSurveys');
+Route::get('/survey', [SurveyController::class, 'create'])->name('survey');
+Route::post('/survey/store', [SurveyController::class, 'store'])->name('storeSurveyResponse');
