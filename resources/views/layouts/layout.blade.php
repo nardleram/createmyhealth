@@ -76,6 +76,7 @@
                 <p class="mb-2"><span class="font-bold">Website design and hosting:</span> Toby Russell (tobyrussell@protonmail.com)</p>
                 <p class="mb-2"><span class="font-bold">Site photography:</span> “Home”: <span onclick="toggleHomePhotographersPopup(event)" id="viewDeetz" class="font-semibold text-white hover:text-slate-200 cursor-pointer transition-colors delay-100 duration-250">view details</span>; “We are”: Calum Lewis; “Events”: Anonymous</p>
                 <p class="mb-2"><span class="font-bold">Site text and editing:</span> Annette Russell (annettegrussell@icloud.com), Toby Russell</p>
+                <p class="mb-2"><span class="font-bold">CMH Survey text and editing:</span> Emily Godfrey</p>
                 <a href="{{ url('/privacy') }}" class="font-semibold text-white hover:text-slate-200 cursor-pointer transition-colors delay-100 duration-250">Our privacy policy</a>
             </div>
 
