@@ -5,15 +5,17 @@
 <h1 class="mt-36 text-3xl font-serif text-center text-slate-800">The Create My Health survey</h1>
 
 @if(Session::has('success'))
-    <div class="rounded-md w-11/12 md:w-1/2 shadow-md mt-4 py-4 px-2 border border-green-700">
+    <div class="rounded-md w-11/12 md:w-1/2 mx-auto shadow-md mt-4 py-4 px-2 border border-green-700">
         <p class="text-center text-green-600 font-bold">{{ Session::get('success') }}</p>
     </div>
 @endif
 
 @if($errors)
-   @foreach ($errors->all() as $error)
-      <small class="text-red-600">{{ $error }}</small>
-  @endforeach
+    <div class="w-11/12 md:w-1/2 mx-auto mt-4 py-4 px-2 rounded-md shadow-md border border-red-700">
+        @foreach ($errors->all() as $error)
+            <small class="text-red-600">{{ $error }}</small>
+        @endforeach
+    </div>
 @endif
 
 <div class="mx-auto px-2 md:px-12 lg:px-24 mt-10 text-slate-700">
