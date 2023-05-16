@@ -10,7 +10,7 @@
     </div>
 @endif
 
-@if($errors)
+@if(count($errors) > 0)
     <div class="w-11/12 md:w-1/2 mx-auto mt-4 py-4 px-2 rounded-md shadow-md border border-red-700">
         @foreach ($errors->all() as $error)
             <small class="text-red-600">{{ $error }}</small>
