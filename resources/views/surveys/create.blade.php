@@ -5,7 +5,7 @@
 <h1 class="mt-36 text-3xl font-serif text-center text-slate-800">The Create My Health survey</h1>
 
 @if(Session::has('success'))
-    <div class="rounded-md shadow-md mt-4 py-4 px-2 border border-green-700">
+    <div class="rounded-md w-11/12 md:w-1/2 shadow-md mt-4 py-4 px-2 border border-green-700">
         <p class="text-center text-green-600 font-bold">{{ Session::get('success') }}</p>
     </div>
 @endif
@@ -127,14 +127,14 @@
             </div>
 
             <div class="w-full flex items-center my-3">
-                <input id="other_services" type="checkbox" name="other_services" value="t" {{ old('other_services') == 't' ? 'checked' : '' }}>
+                <input id="other_healthcare_services" type="checkbox" name="other_healthcare_services" value="t" {{ old('other_healthcare_services') == 't' ? 'checked' : '' }}>
                 <p class="pLabel">Other (please specify)</p>
             </div>
         </div>
 
         <div class="w-full mb-4 mt-2">
-            <label for="other_healthcare_assistance" class="surveyLabel"></label>
-            <textarea id="other_healthcare_assistance" class="cmhSurveyTextarea" rows="5" cols="50" name="other_healthcare_assistance">{{ old('other_healthcare_assistance') }}</textarea>
+            <label for="other_healthcare_services_specified" class="surveyLabel"></label>
+            <textarea id="other_healthcare_services_specified" class="cmhSurveyTextarea" rows="5" cols="50" name="other_healthcare_services_specified">{{ old('other_healthcare_services_specified') }}</textarea>
         </div>
     </div>
 
@@ -181,13 +181,13 @@
                 <input id="meditation" class="" type="checkbox" name="meditation" value="t" {{old('meditation') == 't' ? 'checked' : '' }}>
             </div>
             <div class="w-full sm:w-1/2">
-                <label for="other_services" class="surveyCbxLabel">Other (please specify)</label>
-                <input id="other_services" class="" type="checkbox" name="other_services" value="t" {{ old('other_services') == 't' ? 'checked' : '' }}>
+                <label for="other_educational_services" class="surveyCbxLabel">Other (please specify)</label>
+                <input id="other_educational_services" class="" type="checkbox" name="other_educational_services" value="t" {{ old('other_educational_services') == 't' ? 'checked' : '' }}>
             </div>
         </div>
         <div class="w-full mt-2 mb-4">
-            <label for="other_services_requested" class="surveyLabel"></label>
-            <textarea id="other_services_requested" class="cmhSurveyTextarea" rows="5" cols="50" name="other_services_requested">{{ old('other_services_requested') }}</textarea>
+            <label for="other_educational_services_specified" class="surveyLabel"></label>
+            <textarea id="other_educational_services_specified" class="cmhSurveyTextarea" rows="5" cols="50" name="other_educational_services_specified">{{ old('other_educational_services_specified') }}</textarea>
         </div>
     </div>
 

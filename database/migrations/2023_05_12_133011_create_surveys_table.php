@@ -38,8 +38,9 @@ return new class extends Migration
             $table->string('education_workshops')->nullable();
             $table->string('more_local')->nullable();
             $table->string('accessible_childcare')->nullable();
-            $table->string('practitioniers_directory')->nullable();
-            $table->string('other_healthcare_assistance')->nullable();
+            $table->string('practitioners_directory')->nullable();
+            $table->string('other_healthcare_services')->nullable();
+            $table->string('other_healthcare_services_specified')->nullable();
             $table->string('holistic_therapies')->nullable();
             $table->string('first_aid')->nullable();
             $table->string('dementia')->nullable();
@@ -49,8 +50,8 @@ return new class extends Migration
             $table->string('homeopathy')->nullable();
             $table->string('childrens_health')->nullable();
             $table->string('meditation')->nullable();
-            $table->string('other_services')->nullable();
-            $table->string('other_services_requested')->nullable();
+            $table->string('other_educational_services')->nullable();
+            $table->string('other_educational_services_specified')->nullable();
             $table->string('offer_practitioner_professional')->nullable();
             $table->string('offer_skills_volunteer')->nullable();
             $table->string('offer_space_resources')->nullable();
