@@ -66,9 +66,9 @@
     </x-big-link>
 
     <x-big-link>
-        <x-slot:url>https://www.surveymonkey.co.uk/r/7DY9H76</x-slot>
+        <x-slot:url>{{ url('/survey') }}</x-slot>
 
-        <x-slot:target>_blank</x-slot>
+        <x-slot:target>_self</x-slot>
     
         <x-slot:text>Take our survey</x-slot>
     </x-big-link>
