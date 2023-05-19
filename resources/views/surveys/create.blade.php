@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div id="wider-range-services" class="w-full">
+    <div id="health-services-wanted" class="w-full">
         <p class="text-sm mt-5 mb-2">Create My Health would like to help people access a wider range of health services through a directory of practitioners and by having a pot of money to support people with the cost of this if needed. What would help you most to access a wider range of health services? (tick all that apply)</p>
 
         <div class="w-11/12 justify-start items-center mx-auto">
@@ -140,7 +140,7 @@
         </div>
     </div>
 
-    <div id="services-offered">
+    <div id="health-services-education">
         <p class="text-sm mt-5 mb-2">We would like to offer talks, training , groups and workshops on a wide range of health and wellbeing issues. Please tick any that you may find useful and add suggestions in the comment box.</p>
 
         <div class="flex flex-wrap w-11/12 justify-start items-center mx-auto">
