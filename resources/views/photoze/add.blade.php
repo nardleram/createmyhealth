@@ -1,36 +1,32 @@
-@extends('layouts.photo-layout')
+@extends('layouts.management-layout')
 
 @section('content')
 
-<div class="absolute top-5 left-5 z-50 px-8 py-2 bg-slate-500 text-lmhlBg1 rounded-md shadow-md hover:bg-slate-600 transition-colors delay-100 duration-250">
-    <a href="{{ route('photoze') }}" as="button">Show photos</a>
+<div class="mx-auto max-w-3xl min-w-[768px]">
+    <div class="w-4/6 sm:1/2 mx-auto py-10 px-5 md:px-0">
+        <h1 class="mnarjeTitle">Add a home-page photo</h1>
+
+        <form action="{{ route('storePhoto') }}" method="POST" enctype="multipart/form-data">
+            @csrf
+
+            <div class="w-full mb-4">
+                <label for="photographer" class="cmhLabel">Name of photographer to credit</label>
+                <input id="photographer" class="cmhInput" type="text" name="photographer" required autofocus>
+            </div>
+
+            <div class="w-full mb-4">
+                <label for="license" class="cmhLabel">Full address of photographer’s website</label>
+                <input id="license" class="cmhInput" type="text" name="license" placeholder="https://isobel.photography.com" required>
+            </div>
+
+            <div class="w-full mb-4 h-14">
+                <label for="name" class="block mb-1 pl-2 text-lmhlMain1 text-xs lowercase tracking-tight">Select photograph</label>
+                <input id="name" name="name" type="file" class="w-full text-slate-600 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:bg-transparent file:border-0 file:bg-slate-600 file:mr-4 file:py-4 file:px-4 file:text-slate-400" required>
+            </div>
+
+            <button type="submit" class="w-full mx-auto mt-8 px-8 py-2 bg-success-600 text-lmhlBg1 rounded-md shadow-md hover:bg-success-700 transition-colors delay-100 duration-250">Save</button>
+        </form>
+    </div>
 </div>
 
-<div class="absolute top-5 right-5 z-50 px-8 py-2 bg-slate-500 text-lmhlBg1 rounded-md shadow-md hover:bg-slate-600 transition-colors delay-100 duration-250">
-    <a href="{{ route('logout') }}" as="button">Logout</a>
-</div>
-
-<div class="mt-24 w-full md:w-1/2 lg:w-1/3 mx-auto py-10">
-    <h1 class="text-3xl font-serif text-center mb-10">Upload a photo</h1>
-
-    <form action="{{ route('storePhoto') }}" method="POST" enctype="multipart/form-data">
-        @csrf
-
-        <div class="w-full mb-4">
-            <label for="photographer" class="cmhLabel">Name of photographer to credit</label>
-            <input id="photographer" class="cmhInput" type="text" name="photographer">
-        </div>
-
-        <div class="w-full mb-4">
-            <label for="license" class="cmhLabel">Type of license to reference</label>
-            <input id="license" class="cmhInput" type="text" name="license">
-        </div>
-
-        <div class="w-full mb-4 h-14">
-            <label for="name" class="cmhLabel">Select photograph</label>
-            <input id="name" name="name" type="file" class="w-full mt-1 pl-4 pt-9 pb-9 shadow-sm bg-lmhlBg1 h-12 rounded-full border-none focus:border-lmhlMain1 focus:ring-1 focus:ring-lmhlMain1 focus:shadow-md text-sm tracking-tight font-medium">
-        </div>
-
-        <button type="submit" class="px-2 py-3 bg-lmhlMain1 text-lmhlBg1 text-lg cursor-pointer tracking-tight font-bold rounded-lg shadow-md mt-10 w-full text-center mx-auto hover:shadow-lg">Save</button>
-    </form>
-</div>
+@endsection

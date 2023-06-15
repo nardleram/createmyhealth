@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Photo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
 
 class LoginController extends Controller
@@ -25,7 +25,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
  
-            return redirect('/photoze/index');
+            return redirect('/mnarje/index');
         }
         
         return back()->withErrors([
@@ -40,6 +40,10 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return view('home');
+        $photos = Photo::all();
+
+        return view('home')->with([
+            'photo' => $photos->random()
+        ]);
     }
 }

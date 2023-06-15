@@ -1,1 +1,3 @@
-<button type="submit" class="py-2 text-white bg-red-700 hover:bg-red-800 text-sm cursor-pointer tracking-tight font-light rounded-lg text-center mx-auto hover:shadow-lg w-full">{{ $text }}</button>
+<button type="submit" class="w-full mx-auto text-xs text-center text-red-700 hover:text-red-800 cursor-pointer tracking-tight font-semibold">
+    <x-icon name="trash" outline />
+</button>

@@ -7,7 +7,7 @@
         <title>create my health</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Elsie&display=swap&family=Mulish:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Elsie&display=swap&family=Mulish:wght@300;400;500;600;700;800&display=swap">
 
         <!-- Styles -->
         @vite('resources/css/app.css')
@@ -17,8 +17,8 @@
     </head>
 
     <body class="antialiased bg-lmhlBg1 font-sans text-lmhlMainTextColorDark1">
-        <nav class="absolute top-0 h-24 w-full bg-lmhlBg1 text-lmhlPanel1 flex justify-between items-center z-50 md:px-8 px-4 shadow-sm shadow-lmhlMain1" aria-label="non-mobile">
-            <div id="logo" class="w-2/6 z-50">
+        <nav class="absolute top-0 h-24 w-full bg-lmhlBg1 text-lmhlPanel1 flex justify-between items-center z-10 md:px-8 px-4 shadow-sm shadow-lmhlMain1" aria-label="non-mobile">
+            <div id="logo" class="w-2/6 z-20">
                 <a href="{{ url('/') }}">
                     <img src="/storage/images/cmh_whole.svg" alt="logo" class="md:h-16 h-14 min-h-14">
                 </a>

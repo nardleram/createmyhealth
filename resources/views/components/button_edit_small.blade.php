@@ -1,1 +1,3 @@
-<a href="{{ route('editPhoto', $id) }}" as="button" class="py-2 text-white bg-lmhlHighlight3 hover:bg-lmhlHighlight4 text-sm cursor-pointer tracking-tight font-light rounded-lg text-center mx-auto hover:shadow-lg w-1/5 md:w-1/6">{{ $text }}</a>
+<a href="{{ route('editPhoto', $id) }}" as="button" class="w-1/12 mx-auto text-success-600 hover:text-success-800 cursor-pointer tracking-tight font-semibold">
+    <x-icon name="pencil-square" outline />
+</a>

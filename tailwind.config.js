@@ -6,7 +6,7 @@ module.exports = {
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
-    "./resources/**/*.vue",
+    "./resources/js/**/*.vue",
   ],
   theme: {
     extend: {
@@ -15,6 +15,28 @@ module.exports = {
         serif: ['Elsie', ...defaultTheme.fontFamily.serif]
       },
       colors: {
+        'primary': {
+          100: '#f8edf2',
+          200: '#eac8d9',
+          300: '#e3b5cd',
+          400: '#d590b4',
+          500: '#c0598e',
+          600: '#a63f74',
+          700: '#7f3059',
+          800: '#6f2a4e',
+          900: '#5c2341',
+        },
+        'success': {
+          100: '#daf1e4',
+          200: '#b4e4c9',
+          300: '#7cd0a0',
+          400: '#56c285',
+          500: '#3da96c',
+          600: '#338c59',
+          700: '#297048',
+          800: '#225e3c',
+          900: '#1b4b30',
+        },
         'lmhlBg1': 'rgb(226, 226, 224)',
         'lmhlBgInput': 'rgb(243, 243, 243)',
         'lmhlMain1': 'rgb(127, 48, 89)',
@@ -55,6 +77,10 @@ module.exports = {
       },
       maxHeight: {
         '70%': '70%',
+      },
+      width: {
+        '48%': '48%',
+        '30%': '30%'
       },
       spacing: {
         '2/5': '40%',

@@ -2,12 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\SurveyController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\AffiliateController;
+use App\Http\Controllers\PostImageController;
+use App\Http\Controllers\ManagementController;
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/weare', function () {
     return view('weare');
@@ -25,20 +30,44 @@ Route::get('/privacy', function () {
     return view('privacy');
 });
 
-Route::get('/photoze/jumpin', [LoginController::class, 'login'])->name('login');
-Route::post('/photoze/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
-Route::get('/photoze/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
-
-Route::get('/photoze/index', [PhotoController::class, 'index'])->middleware('auth')->name('photoze');
-Route::get('/photoze/add', [PhotoController::class, 'create'])->middleware('auth')->name('addPhoto');
-Route::post('/photoze/store', [PhotoController::class, 'store'])->middleware('auth')->name('storePhoto');
-Route::get('/photoze/edit/{photo}', [PhotoController::class, 'edit'])->middleware('auth')->name('editPhoto');
-Route::put('/photoze/{photo}', [PhotoController::class, 'update'])->middleware('auth')->name('updatePhoto');
-Route::delete('/photoze/delete/{photo}', [PhotoController::class, 'destroy'])->middleware('auth')->name('deletePhoto');
-
 Route::get('/apply2affiliate', [AffiliateController::class, 'index'])->name('affiliate');
 Route::post('/apply2affiliate/add', [AffiliateController::class, 'send'])->name('addAffiliate');
 
 Route::get('/survey/vyoo', [SurveyController::class, 'index'])->middleware('auth')->name('vyooSurveys');
 Route::get('/survey', [SurveyController::class, 'create'])->name('survey');
 Route::post('/survey/store', [SurveyController::class, 'store'])->name('storeSurveyResponse');
+
+//Management panel
+Route::get('/mnarje/jumpin', [LoginController::class, 'login'])->name('login');
+Route::post('/mnarje/authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
+
+//AUTH 
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/mnarje/logout', [LoginController::class, 'destroy'])->name('logout');
+
+    Route::get('/test', [PostController::class, 'test'])->name('test');
+
+    Route::get('/mnarje/index', [ManagementController::class, 'index'])->name('mnarje.index');
+
+    Route::get('/posts/index', [PostController::class, 'index'])->name('posts');
+    Route::get('/posts/add', [PostController::class, 'create'])->name('addPost');
+    Route::post('/posts/store', [PostController::class, 'store'])->name('storePost');
+    Route::get('/posts/edit/{post}', [PostController::class, 'edit'])->name('editPost');
+    Route::patch('/posts/update', [PostController::class, 'update'])->name('updatePost');
+    Route::post('/posts/images/store', [PostImageController::class, 'store'])->name('storePostImage');
+    Route::delete('/posts/delete/{post}', [PostController::class, 'destroy'])->name('deletePost');
+
+    Route::get('/categories/index', [CategoryController::class, 'index'])->name('categories');
+    Route::get('/categories/add', [CategoryController::class, 'create'])->name('addCategory');
+    Route::post('/categories/store', [CategoryController::class, 'store'])->name('storeCategory');
+    Route::delete('/categories/delete/{category}', [CategoryController::class, 'destroy'])->name('deleteCategory');
+
+    Route::get('/schedules/index', [ScheduleController::class, 'index'])->name('schedules');
+
+    Route::get('/photoze/index', [PhotoController::class, 'index'])->name('photoze');
+    Route::get('/photoze/add', [PhotoController::class, 'create'])->name('addPhoto');
+    Route::post('/photoze/store', [PhotoController::class, 'store'])->name('storePhoto');
+    Route::get('/photoze/edit/{photo}', [PhotoController::class, 'edit'])->name('editPhoto');
+    Route::put('/photoze/{photo}', [PhotoController::class, 'update'])->name('updatePhoto');
+    Route::delete('/photoze/delete/{photo}', [PhotoController::class, 'destroy'])->name('deletePhoto');
+});
