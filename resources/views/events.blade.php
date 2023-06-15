@@ -26,7 +26,7 @@
                     <table class="w-full border-collapse border border-lmhlHighlight5 text-lmhlBg1 text-left text-xs mb-4">
                         <tr>
                             <th class="border border-lmhlHighlight5 p-2 w-[15%]">Time</th>
-                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold"><span class="tracking-widest">EMOTIONAL FRIDAY</span> 30 June</th>
+                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold">30 June <span class="uppercase">Focus: Emotional Balance</span></th>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
@@ -46,15 +46,7 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                11:00–13:00
-                            </td>
-                            <td class="border border-lmhlHighlight5 p-2">
-                                <span class="text-slate-400"><em>Lindsey, modality tbc</em></span>
-                            </td>
-                        </tr>
-                        <tr class="border border-lmhlHighlight5 p-2">
-                            <td class="border border-lmhlHighlight5 p-2">
-                                11:30–12:30
+                                11:00–12:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
                                 MINI-MASSAGE: 15 minute taster sessions with Romina (drop in basis)
@@ -113,7 +105,7 @@
                     <table class="w-full border-collapse border border-lmhlHighlight5 text-lmhlBg1 text-left text-xs mb-4">
                         <tr>
                             <th class="border border-lmhlHighlight5 p-2 w-[15%]">Time</th>
-                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold"><span class="tracking-widest">PHYSICAL FRIDAY</span> 07 July</th>
+                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold">07 July <span class="uppercase">Focus: Physical Health & Lifestyle</span></th>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
@@ -184,7 +176,7 @@
                     <table class="w-full border-collapse border border-lmhlHighlight5 text-lmhlBg1 text-left text-xs mb-4">
                         <tr>
                             <th class="border border-lmhlHighlight5 p-2 w-[15%]">Time</th>
-                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold"><span class="tracking-widest">EMOTIONAL FRIDAY</span> 14 July</th>
+                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold">14 July <span class="uppercase">Focus: Emotional Balance</span></th>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
@@ -192,6 +184,22 @@
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
                                 NUTRITION: Stress and resilience. Talk by Liz
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                09:30–10:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                Psych-K: An hour’s 1-on-1 session with Lindsey. (Please book your place by emailing us at createmyhealth@proton.me)
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                10:30–11:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                Psych-K: An hour’s 1-on-1 session with Lindsey. (Please book your place by emailing us at createmyhealth@proton.me)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -271,7 +279,7 @@
                     <table class="w-full border-collapse border border-lmhlHighlight5 text-lmhlBg1 text-left text-xs mb-4">
                         <tr>
                             <th class="border border-lmhlHighlight5 p-2 w-[15%]">Time</th>
-                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold"><span class="tracking-widest">PHYSICAL FRIDAY</span> 21 July</th>
+                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold">21 July <span class="uppercase">Focus: Physical Health & Lifestyle</span></th>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
@@ -291,7 +299,7 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                11:00–13:00
+                                13:00–14:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
                                 PILATES with Lindsey
