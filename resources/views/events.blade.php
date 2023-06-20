@@ -21,6 +21,7 @@
 
             <x-slot:bio>
                 <p class="px-6 py-3 leading-loose">Four summer-sun Fridays at Clifford Community Sports Ground dedicated to all things health. You will be hosted by expert practitioners who will give talks (and taster sessions!) on how specific health modalities empower each of us in learning how to create and sustain our own health. These events are four opportunities to dive deeper into your personal health journey and get to know us friendly folks at our community hub!<br>
+                <strong>All events are free, but donations are welcome!</strong><br>
                 The timetable below is not yet set in stone. Please check back closer to the relevant date to see the final version.</p>
                 <div class="bg-lmhlMain1 w-11/12 mx-auto max-h-45% overflow-y-scroll opacity-100 mt-2">
                     <table class="w-full border-collapse border border-lmhlHighlight5 text-lmhlBg1 text-left text-xs mb-4">
@@ -41,7 +42,7 @@
                                 10:30–11:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                AROMATHERAPY: Essential Oils for Wellbeing — relaxation & stress relief + make your own bespoke bath salts with Emily
+                                AROMATHERAPY: <em>Essential oils for wellbeing — relaxation & stress relief</em>. Talk followed by workshop to make your own bespoke bath salts, with Emily
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -50,6 +51,14 @@
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
                                 MINI-MASSAGE: 15 minute taster sessions with Romina (drop in basis)
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                12:00–13:00
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                GROUNDING FOR HEALTH with Mel
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -65,15 +74,7 @@
                                 13:00–14:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                AROMATHERAPY: Essential Oils for Wellbeing — relaxation & stress relief + make your own bespoke bath salts with Emily
-                            </td>
-                        </tr>
-                        <tr class="border border-lmhlHighlight5 p-2">
-                            <td class="border border-lmhlHighlight5 p-2">
-                                13:00–14:00
-                            </td>
-                            <td class="border border-lmhlHighlight5 p-2">
-                                GROUNDING FOR HEALTH with Mel
+                                AROMATHERAPY: <em>Essential oils for wellbeing — relaxation & stress relief</em>. Talk followed by workshop to make your own bespoke bath salts, with Emily
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -97,7 +98,7 @@
                                 15:30–16:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                BACH FLOWER REMEDIES for fear and uncertainty, with Mel
+                                BACH FLOWER REMEDIES: <em>Emotional balance in times of fear and uncertainty</em>, with Mel
                             </td>
                         </tr>
                     </table>
@@ -128,7 +129,7 @@
                                 11:00–12:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                NUTRITION: Talk followed by informal Q&A with Helen
+                                NUTRITION: <em>The good, the bad, and the ugly</em>. Talk followed by informal Q&A with Helen
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -136,7 +137,7 @@
                                 12:00–13:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                NUTRITION: Talk followed by informal Q&A with Helen
+                                NUTRITION:  <em>The good, the bad, and the ugly</em>. Talk followed by informal Q&A with Helen
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -183,7 +184,7 @@
                                 09:30–10:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                NUTRITION: Stress and resilience. Talk by Liz
+                                NUTRITION: <em>Stress and resilience</em>. Talk by Liz
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -191,7 +192,7 @@
                                 09:30–10:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                Psych-K: An hour’s 1-on-1 session with Lindsey. (Please book your place by emailing us at createmyhealth@proton.me)
+                                Psych-K Belief Change: An hour’s 1-on-1 session with Lindsey. (Please book your place by emailing us at createmyhealth@proton.me)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -199,7 +200,7 @@
                                 10:30–11:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                Psych-K: An hour’s 1-on-1 session with Lindsey. (Please book your place by emailing us at createmyhealth@proton.me)
+                                Psych-K Belief Change: An hour’s 1-on-1 session with Lindsey. (Please book your place by emailing us at createmyhealth@proton.me)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -207,7 +208,7 @@
                                 10:30–11:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                AROMATHERAPY: Essential Oils for Wellbeing — mood boosters! + make your own bespoke bath salts with Emily
+                                AROMATHERAPY: <em>Essential oils for wellbeing — mood boosters!</em> Talk followed by workshop to make your own bespoke bath salts, with Emily
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -223,7 +224,7 @@
                                 11:30–12:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                NUTRITION: Talk followed by informal Q&A with Helen
+                                NUTRITION: <em>The good, the bad, and the ugly</em>. Talk followed by informal Q&A with Helen
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -231,7 +232,7 @@
                                 12:30–13:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                NUTRITION: Talk by Helen
+                                NUTRITION: <em>The good, the bad, and the ugly</em>. Talk by Helen
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -271,7 +272,7 @@
                                 15:30–16:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                NUTRITION: Stress & Resilience. Talk by Liz
+                                NUTRITION: <em>Stress & resilience</em>. Talk by Liz
                             </td>
                         </tr>
                     </table>
@@ -286,7 +287,7 @@
                                 09:30–11:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                NUTRITION: Gut health, vagus nerve and mycotoxins: 3 key factors that may be holding back your health! Talk by Liz
+                                NUTRITION: <em>Gut health, vagus nerve and mycotoxins: 3 key factors that may be holding back your health!</em> Talk by Liz
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">

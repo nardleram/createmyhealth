@@ -9,7 +9,7 @@
 
     <div class="text-sm md:text-base p-6 md:p-10 lg:p-20 mb-5">
         <p class="md:leading-loose leading-relaxed text-justify mb-5">Create My Health CIC is committed to advancing a healthcare approach that shifts the paradigm from symptom management to actively co-creating health as a continuous and mindful way of being. To this end, our goal is to establish local-community health hubs throughout Leeds that offer integrated and holistic health care to all. These hubs will constitute a network that encourages, supports and empowers everyone to take responsibility for their health in a way that works for each individual.</p>
-        <p class="md:leading-loose leading-relaxed text-justify">Create My Health is proud to be a member of the PHA (People’s Health Alliance).</p>
+        <p class="md:leading-loose leading-relaxed text-justify">Create My Health is proud to be a member of The PHA (People’s Health Alliance).</p>
     </div>
 
     <div class="bg-lmhlMain1 text-lmhlBg1 text-sm md:text-base p-6 md:p-10 lg:p-20 mb-10">
