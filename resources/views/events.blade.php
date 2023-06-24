@@ -10,19 +10,18 @@
     <h1 class="font-serif text-3xl text-center my-8">Events</span></h1>
 
     <div class="top-0 left-0 w-full h-full hidden profile-popup-bg z-40 bg-black opacity-95 origin-center animate-open-bio-bg">
-        <x-director-profile-bio class="four">
+        <x-director-profile-bio class="first">
             <x-slot:className>
-                four
+                first
             </x-slot>
 
             <x-slot:fullName>
-                Four Health Fridays
+                First Health Friday
             </x-slot>
 
             <x-slot:bio>
-                <p class="px-6 py-3 leading-loose">Four summer-sun Fridays at Clifford Community Sports Ground dedicated to all things health. You will be hosted by expert practitioners who will give talks (and taster sessions!) on how specific health modalities empower each of us in learning how to create and sustain our own health. These events are four opportunities to dive deeper into your personal health journey and get to know us friendly folks at our community hub!<br>
-                <strong>All events are free, but donations are welcome!</strong><br>
-                The timetable below is not yet set in stone. Please check back closer to the relevant date to see the final version.</p>
+                <p class="px-6 py-3 leading-loose">The first of our four summer-sun Fridays at Clifford Community Sports Ground is dedicated to emotional wellbeing. You will be hosted by expert practitioners who will give talks (and taster sessions!) on how essential to your health emotional wellbeing is. Of course it is not possible to separate emotional from physical wellbeing, but if we do want to create our own health, it does indeed help to get to know ourselves as well as we can. To this end, viewing our totality through a variety of lenses in the service of clarity and completeness is a time-honoured tradition.<br>
+                <strong>All events are free, but donations are welcome! No bookings required.</strong>
                 <div class="bg-lmhlMain1 w-11/12 mx-auto max-h-45% overflow-y-scroll opacity-100 mt-2">
                     <table class="w-full border-collapse border border-lmhlHighlight5 text-lmhlBg1 text-left text-xs mb-4">
                         <tr>
@@ -50,7 +49,7 @@
                                 11:00–12:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                MINI-MASSAGE: 15 minute taster sessions with Romina (drop in basis)
+                                MINI-MASSAGE: 15-min taster sessions with Romina (drop in basis)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -79,18 +78,115 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                14:00–16:30
+                                14:00–15:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                REFLEXOLOGY: 15 minute taster sessions with Kate (drop in basis)
+                                MINI STRESS WORKSHOP: Emotional self-regulation technique (HEARTMATH) with Mel
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                14:00–15:30
+                                14:00–16:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                MINI STRESS WORKSHOP: HeartMath & self-help techniques with Mel
+                                REFLEXOLOGY: 15-min taster sessions with Kate (drop in basis)
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                15:30–16:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                BACH FLOWER REMEDIES: <em>Emotional balance in times of fear and uncertainty</em>, with Mel
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </x-slot>
+        </x-director-profile-bio>
+
+        <x-director-profile-bio class="four">
+            <x-slot:className>
+                four
+            </x-slot>
+
+            <x-slot:fullName>
+                Four Health Fridays
+            </x-slot>
+
+            <x-slot:bio>
+                <p class="px-6 py-3 leading-loose">Four summer-sun Fridays at Clifford Community Sports Ground dedicated to all things health. You will be hosted by expert practitioners who will give talks (and taster sessions!) on how specific health modalities empower each of us in learning how to create and sustain our own health. These events are four opportunities to dive deeper into your personal health journey and get to know us friendly folks at our community hub!<br>
+                <strong>All events are free, but donations are welcome!</strong><br>
+                <strong>Except for the two Psych-K Belief Change sessions on 14 July, NO bookings are required.</strong><br>
+                The timetable below is not yet set in stone. Please check back closer to the relevant date to see the final version.</p>
+                <div class="bg-lmhlMain1 w-11/12 mx-auto max-h-45% overflow-y-scroll opacity-100 mt-2">
+                    <table class="w-full border-collapse border border-lmhlHighlight5 text-lmhlBg1 text-left text-xs mb-4">
+                        <tr>
+                            <th class="border border-lmhlHighlight5 p-2 w-[15%]">Time</th>
+                            <th class="border border-lmhlHighlight5 p-2 w-[85%] font-extrabold">30 June <span class="uppercase">Focus: Emotional Balance</span></th>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                09:30–10:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                CACAO CIRCLE with Romina
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                10:30–11:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                AROMATHERAPY: <em>Essential oils for wellbeing — relaxation & stress relief</em>. Talk followed by workshop to make your own bespoke bath salts, with Emily
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                11:00–12:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                MINI-MASSAGE: 15-min taster sessions with Romina (drop in basis)
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                12:00–13:00
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                GROUNDING FOR HEALTH with Mel
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                12:30–13:00
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                MEDITATION with Romina
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                13:00–14:00
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                AROMATHERAPY: <em>Essential oils for wellbeing — relaxation & stress relief</em>. Talk followed by workshop to make your own bespoke bath salts, with Emily
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                14:00–15:00
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                MINI STRESS WORKSHOP: Emotional self-regulation technique (HEARTMATH) with Mel
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                14:00–16:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                REFLEXOLOGY: 15-min taster sessions with Kate (drop in basis)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -113,7 +209,7 @@
                                 09:30–11:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                INDIAN HEAD MASSAGE: 15 minute taster sessions with Romina (drop in basis)
+                                INDIAN HEAD MASSAGE: 15-min taster sessions with Romina (drop in basis)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -150,7 +246,7 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                13:00–14:30
+                                13:00–14:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
                                 HEALTH CAFÉ: lifestyle factors, reduce inflammation with Mel
@@ -158,18 +254,10 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                14:00–16:30
+                                14:30–16:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                REFLEXOLOGY: 15 minute taster sessions with Kate (drop in basis)
-                            </td>
-                        </tr>
-                        <tr class="border border-lmhlHighlight5 p-2">
-                            <td class="border border-lmhlHighlight5 p-2">
-                                15:00–16:30
-                            </td>
-                            <td class="border border-lmhlHighlight5 p-2">
-                                TOXICITY QUIZ & DETOX FOR HOME with Mel
+                                REFLEXOLOGY: Lymph drainage to aid toxin removal – 15-min taster sessions with Mel (drop in basis)
                             </td>
                         </tr>
                     </table>
@@ -213,10 +301,10 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                10:30–12:00
+                                10:30–11:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                HEART-MATH with Liz
+                                Mini stress workshop: Emotional self-regulation technique (HEARTMATH) with Liz
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -237,18 +325,18 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                12:00–16:30
-                            </td>
-                            <td class="border border-lmhlHighlight5 p-2">
-                                REIKI: 20 minute taster sessions with Rosalind (drop in basis)
-                            </td>
-                        </tr>
-                        <tr class="border border-lmhlHighlight5 p-2">
-                            <td class="border border-lmhlHighlight5 p-2">
                                 12:00–14:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
                                 FOREST BATHING with Liz
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                12:00–16:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                REIKI: 20-min taster sessions with Rosalind (drop in basis)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -264,7 +352,7 @@
                                 14:00–15:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                REFLEXOLOGY: 15 minute taster sessions with Kate (drop in basis)
+                                REFLEXOLOGY: 15-min taster sessions with Kate (drop in basis)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -292,10 +380,26 @@
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
                             <td class="border border-lmhlHighlight5 p-2">
-                                10:30–16:00
+                                10:30–13:30
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                REFLEXOLOGY: 15 minute taster sessions with Kate (drop in basis)
+                                REFLEXOLOGY: 15-min taster sessions with Kate (drop in basis)
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                11:00–12:00
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                Toxicity Quiz and detox form home with Mel
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                12:00–13:00
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                THAI CHI / QI GONG: An introduction! By John
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -304,6 +408,22 @@
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
                                 PILATES with Lindsey
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                13:30–14:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                Chair massage, head, neck and shoulder – 15-min taster sessions with John
+                            </td>
+                        </tr>
+                        <tr class="border border-lmhlHighlight5 p-2">
+                            <td class="border border-lmhlHighlight5 p-2">
+                                14:30–16:30
+                            </td>
+                            <td class="border border-lmhlHighlight5 p-2">
+                                REFLEXOLOGY: 15-min taster sessions with Kate (drop in basis)
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -360,10 +480,24 @@
         </x-director-profile-bio>
     </div>
 
-    <div class="grid gap-3 lg:gap-12 xl:gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-3 md:px-5 sm:px-4">
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-6 xl:grid-cols-3 xl:gap-4 px-3 md:px-5 sm:px-4">
         <x-event-card>
             <x-slot:image>
-                <img class="mb-0 min-h-full rounded-tl-md object-fill" src="/storage/images/CMH_4_Fridays.svg" alt="Open day poster">
+                <img class="mb-0 min-h-full rounded-tl-md object-fill" src="/storage/images/CMH_4_Fridays_1.png" alt="1st Friday poster">
+            </x-slot>
+
+            <x-slot:name>First Health Friday</x-slot>
+
+            <x-slot:description>
+                <p class="text-xs font-sans mb-2">First Health Friday, 30 June 2023</p>
+                <p class="text-xs font-sans mb-2">All day starting 09:30</p>
+                <p class="text-xs font-sans mb-2">Clifford Community Sports Ground, Rhodes Lane, LS23 6LQ</p>
+            </x-slot>
+        </x-event-card>
+        
+        <x-event-card>
+            <x-slot:image>
+                <img class="mb-0 min-h-full rounded-tl-md object-fill" src="/storage/images/CMH_4_Fridays.png" alt="4 Fridays poster">
             </x-slot>
 
             <x-slot:name>Four Health Fridays</x-slot>
@@ -371,8 +505,7 @@
             <x-slot:description>
                 <p class="text-xs font-sans mb-2">Four consecutive Fridays starting 30 June 2023</p>
                 <p class="text-xs font-sans mb-2">All day starting 09:30</p>
-                <p class="text-xs font-sans mb-2">Clifford Community Sports Ground, Rhodes Lane, LS23 6LQ
-                    </p>
+                <p class="text-xs font-sans mb-2">Clifford Community Sports Ground, Rhodes Lane, LS23 6LQ</p>
             </x-slot>
         </x-event-card>
         
