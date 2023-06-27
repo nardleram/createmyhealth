@@ -9,8 +9,10 @@ use App\Http\Controllers\SurveyController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\AffiliateController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\PostImageController;
 use App\Http\Controllers\ManagementController;
+use App\Models\Event;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -24,6 +26,9 @@ Route::get('/learning', function () {
 
 Route::get('/events', function () {
     return view('events');
+});
+Route::get('/events2', function () {
+    return view('events2')->with(['events' => Event::with('images')->orderBy('events.id', 'DESC')->get()]);
 });
 
 Route::get('/privacy', function () {
@@ -48,6 +53,13 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/test', [PostController::class, 'test'])->name('test');
 
     Route::get('/mnarje/index', [ManagementController::class, 'index'])->name('mnarje.index');
+
+    Route::get('/events/index', [EventController::class, 'index'])->name('events');
+    Route::get('/events/add', [EventController::class, 'create'])->name('addEvent');
+    Route::post('/events/store', [EventController::class, 'store'])->name('storeEvent');
+    Route::get('/events/edit/{event}', [EventController::class, 'edit'])->name('editEvent');
+    Route::patch('/events/update', [EventController::class, 'update'])->name('updateEvent');
+    Route::delete('/events/delete/{event}', [EventController::class, 'destroy'])->name('deleteEvent');
 
     Route::get('/posts/index', [PostController::class, 'index'])->name('posts');
     Route::get('/posts/add', [PostController::class, 'create'])->name('addPost');

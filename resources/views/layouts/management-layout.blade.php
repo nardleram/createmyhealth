@@ -55,6 +55,11 @@
                 </div>
 
                 <div class="flex justify-start items-center mb-3 text-slate-500 text-sm text-center font-light tracking-tight cursor-pointer hover:text-slate-700 transition-colors delay-100 duration-250">
+                    <x-icon name="user-group" outline />
+                    <a href="{{ route('events') }}"><p class="ml-2">Events</p></a>
+                </div>
+
+                <div class="flex justify-start items-center mb-3 text-slate-500 text-sm text-center font-light tracking-tight cursor-pointer hover:text-slate-700 transition-colors delay-100 duration-250">
                     <x-icon name="tag" outline />
                     <a href="{{ route('categories') }}"><p class="ml-2">Categories</p></a>
                 </div>

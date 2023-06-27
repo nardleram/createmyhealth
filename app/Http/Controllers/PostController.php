@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Inertia\Inertia;
 use App\Models\Category;
-use App\Models\PostImage;
+use App\Models\Image;
 use Illuminate\Http\Request;
 use App\Actions\Posts\StorePost;
 use App\Http\Requests\PostRequest;
@@ -87,13 +87,15 @@ class PostController extends Controller
 
     public function destroy(Post $post)
     {
-        PostImage::where('post_id', $post->id)->delete();
+        Image::where('imageable_id', $post->id)
+            ->where('imageable_type', 'App\\Models\\Post')
+            ->delete();
 
         $post->delete();
 
         return view('posts.index')->with([
             'posts' => Post::with('categories')->get(),
-            'success' => 'Post added successfully!'
+            'success' => 'Post deleted successfully!'
         ]);
     }
 }

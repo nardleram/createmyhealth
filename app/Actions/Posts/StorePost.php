@@ -4,9 +4,12 @@ namespace App\Actions\Posts;
 
 use App\Models\Post;
 use Illuminate\Support\Str;
+use App\Traits\HelperFunctions;
 
 class StorePost
 {
+    use HelperFunctions;
+
     public function handle($request = null): Post
     {
         if (!$request) {
@@ -24,7 +27,7 @@ class StorePost
 
             $request->slug !== 'none'
             ? $slug = $request->slug
-            : $slug = Str::slug($request->title, '-').'-'.md5($this->getRandomString());
+            : $slug = Str::slug($request->title, '-').'-'.md5($this->getRandomString(6));
 
             $post->update([
                 'title' => $request->title,
@@ -41,21 +44,8 @@ class StorePost
             'first_200' => strip_tags(substr($request->body, 0, 199)),
             'body' => $request->body,
             'title' => $request->title,
-            'slug' => Str::slug($request->title, '-').'-'.md5($this->getRandomString()),
+            'slug' => Str::slug($request->title, '-').'-'.md5($this->getRandomString(6)),
             'author' => $request->author
         ]);
-    }
-
-    public function getRandomString()
-    {
-        $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $randomString = '';
-
-        for ($i = 0; $i < 5; $i++) {
-            $index = rand(0, strlen($characters) - 1);
-            $randomString .= $characters[$index];
-        }
-
-        return $randomString;
     }
 }

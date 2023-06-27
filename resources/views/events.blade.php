@@ -399,7 +399,7 @@
                                 12:00–13:00
                             </td>
                             <td class="border border-lmhlHighlight5 p-2">
-                                THAI CHI / QI GONG: An introduction! By John
+                                TAI CHI / QI GONG: An introduction! By John
                             </td>
                         </tr>
                         <tr class="border border-lmhlHighlight5 p-2">
@@ -560,8 +560,8 @@
 <script type="text/javascript" defer>
 
     const togglePopup = (event) => {
+        console.log(event)
         var className = event.split(' ')[0].toLowerCase()
-        console.log(className)
 
         var elProfileBg = document.querySelector(".profile-popup-bg")
         elProfileBg.classList.toggle('hidden')

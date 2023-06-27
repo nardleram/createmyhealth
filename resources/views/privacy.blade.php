@@ -9,7 +9,7 @@
         <h3 class="text-lg font-bold mb-2">Our contact details</h3>
 
         <p class="font-bold">Create My Health CIC</p>
-        <p><span class="font-semibold">Address:</span> Headingley Heart Enterprizes & Arts Centre, Bennett Road, LS63HN</p>
+        <p><span class="font-semibold">Address:</span> Headingley Heart Enterprises & Arts Centre, Bennett Road, LS63HN</p>
         <p><span class="font-semibold">Phone Number:</span> 07486708055</p>    
         <p><span class="font-semibold">E-mail:</span> createmyhealth@proton.me</p>
     </div>
