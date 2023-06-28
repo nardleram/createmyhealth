@@ -207,7 +207,7 @@ defineEmits([
 </script>
 
 <style>
-.ProseMirror,img {
+.ProseMirror, img {
     max-width: 100%;
     height: auto;
 }

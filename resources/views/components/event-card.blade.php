@@ -5,7 +5,7 @@
     'image'
 ])
 
-<div class="flex flex-row w-[300px] sm:w-[500px] md:w-[480px] xl:w-[400px] rounded-md shadow-md mx-auto h-56 bg-white">
+<div class="flex flex-row w-full sm:w-[500px] md:w-[480px] xl:w-[400px] rounded-md shadow-md mx-auto h-56 bg-white">
     <div class="mr-4 max-h-56 w-40 min-w-[160px] overflow-y-hidden rounded-bl-md">
         {{ $image }}
     </div>

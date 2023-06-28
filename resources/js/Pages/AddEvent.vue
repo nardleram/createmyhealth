@@ -39,7 +39,7 @@
                 <div class="w-full mb-4">
                     <label for="body" class="text-xs text-primary-700 lowercase mb-2 pl-2">Enter event details</label>
 
-                    <EventMenubar v-if="editor" :editor="editor"/>
+                    <EventMenubar v-if="editor" :editor="editor" @set-link="onSetLink()"/>
 
                     <EditorContent id="editorDiv" :editor="editor" class="bg-lmhlBgInput max-h-80 overflow-y-scroll mb-2 border border-slate-400 rounded-md p-2"/>
                 </div>
@@ -77,10 +77,11 @@ import OrderedList from '@tiptap/extension-ordered-list'
 import ListItem from '@tiptap/extension-list-item'
 import Bold from '@tiptap/extension-bold'
 import Italic from '@tiptap/extension-italic'
-import CustomImage from '../composables/customImage'
 import EventDetailsParagraph from '../composables/eventDetailsParagraph.js'
+import TextStyle from '@tiptap/extension-text-style'
+import { Color } from '@tiptap/extension-color'
+import Link from '@tiptap/extension-link'
 
-const eventId = ref(0)
 const editor = ref(null)
 const title = ref('')
 const date = ref('')
@@ -111,7 +112,7 @@ const submitEvent = function () {
                 info.value = ''
                 editor.value.destroy()
                 editor.value = new Editor({
-                    content: '<p>Here you enter the event details a visitor can read after clicking the event card\’s  "View details..." button here. But remember, nothing fancy. KISS! Keep it simple, stupid!</p>',
+                    content: '<p>Here you enter the event details a visitor can read after clicking the event card\’s  "View details..." button. But remember, nothing fancy. KISS! Keep it simple, stupid!</p>',
                     extensions: [
                         Document,
                         EventDetailsParagraph,
@@ -130,6 +131,9 @@ const submitEvent = function () {
                         TableRow,
                         TableHeader,
                         TableCell,
+                        TextStyle,
+                        Color,
+                        Link,
                     ],
                 })
             }
@@ -140,7 +144,7 @@ const submitEvent = function () {
 }
 
 editor.value = new Editor({
-    content: '<p>Here you enter the event details a visitor can read after clicking the event card\’s  "View details..." button here. But remember, nothing fancy. KISS! Keep it simple, stupid!</p>',
+    content: '<p>Here you enter the event details a visitor can read after clicking the event card\’s  "View details..." button. But remember, nothing fancy. KISS! Keep it simple, stupid!</p>',
     extensions: [
         Document,
         EventDetailsParagraph,
@@ -159,7 +163,106 @@ editor.value = new Editor({
         TableRow,
         TableHeader,
         TableCell,
+        TextStyle,
+        Color,
+        Link,
     ],
 })
 
+const onSetLink = () => {
+    const previousUrl = editor.value.getAttributes('link').href
+    const url = window.prompt('URL', previousUrl)
+
+    // cancelled
+    if (url === null) {
+        return
+    }
+
+    // empty
+    if (url === '') {
+        editor.value
+            .chain()
+            .focus()
+            .extendMarkRange('link')
+            .unsetLink()
+            .run()
+
+        return
+    }
+
+    // update link
+    editor.value
+        .chain()
+        .focus()
+        .extendMarkRange('link')
+        .setLink({ href: url })
+        .run()
+}
 </script>
+
+<style>
+.ProseMirror,p {
+    font-size: 14px;
+    color: rgb(51 65 85);
+}
+.ProseMirror,table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+     
+.ProseMirror,td,th {
+    min-width: 1em;
+    border: 1px solid rgb(148 163 184);
+    padding: 2px 3px;
+    vertical-align: top;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ProseMirror,th {
+    font-weight: bold;
+    text-align: left;
+}
+
+.ProseMirror,td {
+    font-weight: 400;
+} 
+
+.selectedCell:after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0; right: 0; top: 0; bottom: 0;
+    pointer-events: none;
+}
+
+.column-resize-handle {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    bottom: -2px;
+    width: 4px;
+    pointer-events: none;
+}
+
+.tableWrapper {
+    padding: 1rem 0;
+    overflow-x: auto;
+}
+
+.resize-cursor {
+    cursor: ew-resize;
+    cursor: col-resize;
+}
+
+.proseMirror, a {
+    color: rgb(227 181 205);
+}
+
+.proseMirror, a:hover {
+    color: rgb(213 144 180);
+}
+</style>

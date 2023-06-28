@@ -25,10 +25,9 @@ Route::get('/learning', function () {
 });
 
 Route::get('/events', function () {
-    return view('events');
-});
-Route::get('/events2', function () {
-    return view('events2')->with(['events' => Event::with('images')->orderBy('events.id', 'DESC')->get()]);
+    return view('events')
+        ->with(['events' => Event::with('images')
+        ->orderBy('events.id', 'DESC')->get()]);
 });
 
 Route::get('/privacy', function () {

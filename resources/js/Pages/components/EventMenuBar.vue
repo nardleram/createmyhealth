@@ -49,44 +49,27 @@
                 </g>
             </svg>
         </div>
-        <div class="text-slate-700 bg-lmhlBgInput cursor-pointer" @click="editor.chain().focus().toggleHeading({ level: 1 }).run()" :class="{ 'is-active': editor.isActive('heading', { level: 1 }) }">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor">
-                <defs id="defs1833" />
-                <g id="layer1">
-                    <path d="M 2.675887,5.0587853 H 1.0378643 V 4.6997666 H 6.8719174 V 5.0587853 H 5.0095081 V 11.565998 H 11.180141 V 5.0587853 H 9.5421186 V 4.6997666 h 5.8340534 v 0.3590187 h -1.86241 V 18.92588 h 1.86241 V 19.2849 H 9.5421186 V 18.92588 H 11.180141 V 11.925017 H 5.0095081 V 18.92588 H 6.8719174 V 19.2849 H 1.0378643 V 18.92588 H 2.675887 Z"
-                    style="font-size:21.3592px;line-height:1.25;font-family:Elsie;-inkscape-font-specification:'Elsie, Normal';stroke-width:0.560967"
-                    id="path1961" />
-                    <path d="m 19.08866,18.94832 v -7.875972 q -0.807793,0.516089 -1.952164,0.83023 L 17.024302,11.54356 q 1.279005,-0.381458 1.952165,-0.919985 0.695598,-0.560967 0.897546,-1.6604618 0.762914,-0.089755 1.211688,-0.2917027 V 18.94832 h 1.952164 v 0.33658 h -5.744298 v -0.33658 z"
-                    style="font-size:21.3592px;line-height:1.25;font-family:Elsie;-inkscape-font-specification:'Elsie, Normal';stroke-width:0.560967"
-                    id="path1963" />
-                </g>
+        <input
+            class="w-8 rounded-md cursor-pointer"
+            type="color"
+            @input="editor.chain().focus().setColor($event.target.value).run()"
+            :value="editor.getAttributes('textStyle').color"
+        >
+        <div class="text-slate-700 bg-lmhlBgInput cursor-pointer" @click="$emit('setLink')" :class="{ 'is-active': editor.isActive('link') }">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
             </svg>
         </div>
-        <div class="text-lg text-slate-700 px-2 rounded-md bg-lmhlBgInput tracking-tight hover:bg-slate-200 cursor-pointer" @click="editor.chain().focus().toggleHeading({ level: 2 }).run()" :class="{ 'is-active': editor.isActive('heading', { level: 2 }) }">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor">
-                <defs id="defs2035" />
-                <g id="layer1">
-                    <path d="M 2.1906572,18.223606 V 5.7114241 H 4.0364258 V 11.106748 H 11.064544 V 5.7114241 h 1.845769 V 18.223606 H 11.064544 V 12.650804 H 4.0364258 v 5.572802 z"
-                    style="font-weight:600;font-size:16.1682px;line-height:1.25;font-family:Mulish;-inkscape-font-specification:'Mulish, Semi-Bold';stroke-width:0.443694"
-                    id="path2163" />
-                    <path d="m 14.649876,18.223606 v -1.243341 l 3.907642,-4.085263 q 0.758922,-0.791217 1.13031,-1.48555 0.371387,-0.694334 0.371387,-1.4371086 0,-0.9203952 -0.581303,-1.3886664 -0.565154,-0.4682711 -1.647022,-0.4682711 -0.855807,0 -1.614729,0.3067983 -0.742775,0.3067984 -1.437109,0.9365425 L 14.197751,8.0831113 q 0.678186,-0.6297442 1.679317,-1.0011316 1.017278,-0.3875347 2.147588,-0.3875347 1.776202,0 2.728892,0.807364 0.968837,0.8073642 0.968837,2.3090616 0,1.0657204 -0.516713,2.0507044 -0.516713,0.968837 -1.550138,2.002264 l -3.374783,3.407077 v -0.452125 h 5.909906 v 1.404815 z"
-                    style="font-weight:600;font-size:16.1682px;line-height:1.25;font-family:Mulish;-inkscape-font-specification:'Mulish, Semi-Bold';stroke-width:0.403682"
-                    id="path2165" />
-                </g>
-            </svg>
-        </div>
-        <div class="text-slate-700 bg-lmhlBgInput cursor-pointer" @click="editor.chain().focus().toggleHeading({ level: 3 }).run()" :class="{ 'is-active': editor.isActive('heading', { level: 3 }) }">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor">
-                <defs id="defs2228" />
-                <g id="layer1">
-                    <path d="M 3.0013608,17.600109 V 6.1306774 H 4.5143496 V 11.141436 H 11.184515 V 6.1306774 h 1.529259 V 17.600109 H 11.184515 V 12.426663 H 4.5143496 v 5.173446 z"
-                    style="font-weight:500;font-size:10.5833px;line-height:1.25;font-family:Mulish;-inkscape-font-specification:'Mulish, Medium';stroke-width:0.406718"
-                    id="path2356" />
-                    <path d="m 17.546815,17.746527 q -1.015213,0 -1.945826,-0.310203 -0.916514,-0.310205 -1.536922,-0.874213 l 0.465307,-1.015214 q 0.690909,0.564008 1.424119,0.817812 0.73321,0.253803 1.551021,0.253803 1.085715,0 1.649722,-0.451206 0.564008,-0.465306 0.564008,-1.325418 0,-0.846012 -0.578107,-1.283118 -0.564008,-0.437106 -1.663823,-0.437106 h -1.522821 v -1.085715 h 1.424119 q 0.930612,0 1.494621,-0.479406 0.564008,-0.479407 0.564008,-1.311318 0,-0.7614109 -0.521708,-1.1562162 -0.507606,-0.4089056 -1.45232,-0.4089056 -1.593322,0 -2.763637,1.1139151 L 14.23327,8.7929047 q 0.592207,-0.5922081 1.46642,-0.9165125 0.874211,-0.3243045 1.847125,-0.3243045 1.48052,0 2.326533,0.6768092 0.846011,0.6768093 0.846011,1.8894261 0,0.916513 -0.521709,1.579222 -0.507605,0.648609 -1.395918,0.860111 v -0.155102 q 1.043414,0.183303 1.621522,0.860112 0.578107,0.662709 0.578107,1.663823 0,1.311318 -0.930611,2.072728 -0.916514,0.74731 -2.523935,0.74731 z"
-                    style="font-weight:500;font-size:10.5833px;line-height:1.25;font-family:Mulish;-inkscape-font-specification:'Mulish, Medium';stroke-width:0.352506"
-                    id="path2358" />
-                </g>
-            </svg>
+        <div class="text-red-700 bg-lmhlBgInput cursor-pointer" @click="editor.chain().focus().unsetLink().run()" :disabled="!editor.isActive('link')">
+            <div class="flex items-center gap-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 -mt-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 -ml-4 mt-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+
+            </div>
         </div>
         <div class="text-slate-700 px-2 pt-0.5 bg-lmhlBgInput cursor-pointer" @click="editor.chain().focus().toggleBulletList().run()" :class="{ 'is-active': editor.isActive('bulletList') }">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor">
@@ -184,12 +167,11 @@
         <div class="text-slate-700 px-2 pt-0.5 bg-lmhlBgInput cursor-pointer" @click="toggleTableMenu">
             <div class="flex items-center gap-0">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-            </svg>
-
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                </svg>
             </div>
         </div>
     </div>
@@ -226,6 +208,10 @@ const props = defineProps({
     editor: Object
 })
 
+defineEmits([
+    'setLink'
+])
+
 let showTableMenu = false
 
 const toggleTableMenu = (event) => {
@@ -241,62 +227,3 @@ const toggleTableMenu = (event) => {
     elMenu.classList.toggle('absolute')
 }
 </script>
-
-<style>
-.ProseMirror,p {
-    font-size: 14px;
-    color: rgb(51 65 85);
-}
-.ProseMirror,table {
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-     
-.ProseMirror,td,th {
-    min-width: 1em;
-    border: 1px solid rgb(148 163 184);
-    padding: 2px 3px;
-    vertical-align: top;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.ProseMirror,th {
-    font-weight: bold;
-    text-align: left;
-}
-
-.ProseMirror,td {
-    font-weight: 400;
-} 
-
-.selectedCell:after {
-    z-index: 2;
-    position: absolute;
-    content: "";
-    left: 0; right: 0; top: 0; bottom: 0;
-    pointer-events: none;
-}
-
-.column-resize-handle {
-    position: absolute;
-    right: -2px;
-    top: 0;
-    bottom: -2px;
-    width: 4px;
-    pointer-events: none;
-}
-
-.tableWrapper {
-    padding: 1rem 0;
-    overflow-x: auto;
-}
-
-.resize-cursor {
-    cursor: ew-resize;
-    cursor: col-resize;
-}
-</style>
