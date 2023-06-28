@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\Events\DeleteEvent;
 use Inertia\Inertia;
 use App\Models\Event;
 use App\Models\Image;
@@ -15,7 +16,8 @@ class EventController extends Controller
 {
     public function __construct(
         protected StoreEvent $storeEvent,
-        protected UpdateEvent $updateEvent
+        protected UpdateEvent $updateEvent,
+        protected DeleteEvent $deleteEvent
     ) {}
 
     public function index()
@@ -37,10 +39,9 @@ class EventController extends Controller
     {
         $this->storeEvent->handle($request);
 
-        return view('events.index')->with([
-            'events' => Event::all(),
-            'success' => 'Event added successfully!'
-        ]);
+        return Inertia::location(route('events', [
+            'events' => Event::all()
+        ]));
     }
 
     public function edit(Event $event)
@@ -54,23 +55,17 @@ class EventController extends Controller
     {
         $this->updateEvent->handle($request);
 
-        return view('events.index')->with([
-            'events' => Event::all(),
-            'success' => 'Event updated successfully!'
-        ]);
+        return Inertia::location(route('events', [
+            'events' => Event::all()
+        ]));
     }
 
     public function destroy(Event $event)
     {
-        Image::where('imageable_id', $event->id)
-            ->where('imageable_type', 'App\\Models\\Event')
-            ->delete();
+        $this->deleteEvent->handle($event);
 
-        $event->delete();
-
-        return view('events.index')->with([
-            'events' => Event::all(),
-            'success' => 'Event deleted successfully!'
-        ]);
+        return Inertia::location(route('events', [
+            'events' => Event::all()
+        ]));
     }
 }
