@@ -18,7 +18,5 @@
     <body class="bg-lmhlBg1 font-sans">
         @inertia
         
-        <div id="hamburger" class="hidden w-0 h-0"></div>
-        <div id="mobile-menu" class="hidden w-0 h-0"></div>
     </body>
 </html>

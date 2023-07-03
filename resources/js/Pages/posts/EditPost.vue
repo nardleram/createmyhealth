@@ -20,7 +20,7 @@
 
                 <div class="w-full">
                     <label for="name" class="block mb-1 pl-2 text-lmhlMain1 text-xs lowercase tracking-tight">select image</label>
-                    <input multiple id="postImage" type="file" class="w-full text-slate-500 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:bg-transparent file:border-0 file:bg-slate-600 file:mr-4 file:py-4 file:px-4 file:text-slate-400 file:cursor-pointer">
+                    <input multiple id="postImage" type="file" class="w-full text-slate-500 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:bg-transparent file:border-0 file:bg-gray-600 file:mr-4 file:py-4 file:px-4 file:text-slate-400 file:cursor-pointer">
                 </div>
                 
                 <button @click="addImage()" type="submit" class="w-full mx-auto mt-8 px-8 py-2 bg-success-600 text-lmhlBg1 rounded-md shadow-md hover:bg-success-700 transition-colors delay-100 duration-250">Upload image</button>
@@ -30,30 +30,43 @@
 
     <div class="mx-auto max-w-4xl min-w-[768px]">
         <div class="w-4/6 sm:1/2 mx-auto py-10 px-5 md:px-0">
-            <h1 class="mnarjeTitle">Add a blog post</h1>
+            <h1 class="mnarjeTitle">Edit “{{ post.title }}”</h1>
 
             <form @submit.prevent="submitArticle()">
                 <div class="w-full mb-4">
                     <label for="title" class="cmhLabel">title</label>
-                    <input id="title" v-model="title" class="cmhInput font-serif text-base" type="text" required autofocus>
+                    <div class="w-full pl-4 pt-7 pb-4 h-[54px] shadow-sm bg-lmhlBgInput text-slate-600 font-serif rounded-lg text-base tracking-tight font-medium border border-slate-400">{{ post.title }}</div>
+                    <div v-if="usePage().props.errors.title">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.title }}</small>
+                    </div>
                 </div>
 
                 <div class="w-full mb-4">
                     <label for="author" class="cmhLabel">author</label>
-                    <input id="author" v-model="author" class="cmhInput" type="text" required>
+                    <input id="author" v-model="author" class="cmhInput" type="text" required autofocus>
+                    <div v-if="usePage().props.errors.author">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.title }}</small>
+                    </div>
                 </div>
 
                 <div class="w-full px-3 pt-1 pb-2 mb-4 border border-slate-400 bg-lmhlBgInput rounded-lg">
                     <p class="text-primary-700 text-xs mb-2">assign one or more categories</p>
                     <div class="flex flex-wrap gap-3 w-full items-center justify-start">
                         <div v-for="(cat, catKey) in categories" :key="catKey">
-                            <input class="-mr-1 postcats" type="checkbox" :value="cat.id">
-                            <label :for="cat.id" class="text-slate-600 text-xs tracking-tight ml-2">{{ cat.title }}</label>
+                            <input class="-mr-1 postcats" 
+                                type="checkbox"
+                                :checked="checkedCats.some(checkedCat => checkedCat.category_id === cat.id)"
+                                :value="cat.id">
+                            <label 
+                                :for="cat.id"  
+                                class="text-slate-600 text-xs tracking-tight ml-2">
+                                {{ cat.title }}
+                            </label>
                         </div>
                     </div>
                 </div>
 
-                <input type="hidden" id="postId" value="0" />
+                <input type="hidden" id="postId" :value="post.id" />
 
                 <div class="w-full mb-4">
                     <label for="body" class="text-xs text-primary-700 lowercase mb-2 pl-2">compose post below</label>
@@ -63,14 +76,14 @@
                     <EditorContent id="editorDiv" :editor="editor" class="bg-lmhlBgInput max-h-80 overflow-y-scroll mb-2 border border-slate-400 rounded-md p-2"/>
                 </div>
 
-                <button @click="submitArticle()" type="submit" class="w-full mx-auto mt-8 px-8 py-2 bg-success-600 text-lmhlBg1 rounded-md shadow-md hover:bg-success-700 transition-colors delay-100 duration-250">Save</button>
+                <button @click="submitArticle()" type="submit" class="w-full mx-auto mt-8 px-8 py-2 bg-success-600 text-lmhlBg1 rounded-md shadow-md hover:bg-success-700 transition-colors delay-100 duration-250">Update</button>
             </form>
         </div>
     </div>
 </template>
 
 <script>
-import Layout from '../Pages/layouts/Layout.vue'
+import Layout from '../layouts/Layout.vue'
 
 export default {
     layout: Layout
@@ -80,7 +93,7 @@ export default {
 <script setup>
 import { useForm, usePage } from '@inertiajs/vue3'
 import { ref } from 'vue'
-import Menubar from '../Pages/components/MenuBar.vue'
+import Menubar from '../components/MenuBar.vue'
 import { Editor, EditorContent } from '@tiptap/vue-3'
 import Document from '@tiptap/extension-document'
 import Text from '@tiptap/extension-text'
@@ -92,17 +105,19 @@ import OrderedList from '@tiptap/extension-ordered-list'
 import ListItem from '@tiptap/extension-list-item'
 import Bold from '@tiptap/extension-bold'
 import Italic from '@tiptap/extension-italic'
-import CustomImage from '../composables/customImage'
-import CustomParagraph from '../composables/cutomParagraph.js'
+import CustomImage from '../../composables/customImage'
+import CustomParagraph from '../../composables/cutomParagraph.js'
 
 const props = defineProps({
-    categories: Object
+    categories: Object,
+    post: Object,
+    checkedCats: Object
 })
 
 const postId = ref(0)
 const editor = ref(null)
 const title = ref('')
-const author = ref('')
+const author = ref(usePage().props.post.author)
 const showBackdrop = ref(false)
 const showUploadImageModal = ref(false)
 const isLoading = ref(false)
@@ -167,21 +182,21 @@ const submitArticle = function () {
 
     let payload = useForm({
         'title': title.value,
-        'slug': 'none',
+        'slug': usePage().props.post.slug,
         'author': author.value,
         'body': htmlBody,
         'cats': postcats,
-        'post_id': postId.value
+        'post_id': usePage().props.post.id
     })
 
     try {
-        payload.post('/posts/store', {
+        payload.patch('/posts/update', {
             onSuccess: () => {
-                title.value = ''
-                author.value = ''
+                title.value = usePage().props.post.title
+                author.value = usePage().props.post.author
                 editor.value.destroy()
                 editor.value = new Editor({
-                    content: '<h3>Article subhead could go here (if needed)</h3><blockquote>Perhaps a quote to lend your work an air of gravitas?</blockquote><p>The body of your post might continue here and turn out far more engaging than this dummy text...</p><p>(Go right ahead! Sweep this nonsense aside and compose your masterpiece!)</p>',
+                    content: usePage().props.post.body,
                     extensions: [
                         Document,
                         CustomParagraph,
@@ -205,7 +220,7 @@ const submitArticle = function () {
 }
 
 editor.value = new Editor({
-    content: '<h3>Article subhead could go here (if needed)</h3><blockquote>Perhaps a quote to lend your work an air of gravitas?</blockquote><p>The body of your post might continue here and turn out far more engaging than this dummy text...</p><p>(Go right ahead! Sweep this nonsense aside and compose your masterpiece!)</p>',
+    content: usePage().props.post.body,
     extensions: [
         Document,
         CustomParagraph,

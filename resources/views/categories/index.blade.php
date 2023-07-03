@@ -2,9 +2,6 @@
 
 @section('content')
 
-{{-- <div class="absolute top-24 right-5 z-50 px-8 py-2 bg-slate-500 text-lmhlBg1 rounded-md shadow-md hover:bg-slate-600 transition-colors delay-100 duration-250">
-    <a href="{{ route('logout') }}" as="button">Logout</a>
-</div> --}}
 <div class="mx-auto max-w-4xl min-w-[768px]">
     <div class="w-11/12 mx-auto py-10 px-5 md:px-0">
         <h1 class="mnarjeTitle">Blog-post categories</h1>

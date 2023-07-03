@@ -5,7 +5,6 @@ namespace App\Actions\Events;
 use App\Models\Event;
 use App\Models\Image;
 use Illuminate\Support\Facades\File;
-use Illuminate\Http\Request;
 
 class DeleteEvent
 {

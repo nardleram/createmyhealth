@@ -2,52 +2,57 @@
 
 namespace App\Http\Controllers;
 
+use Inertia\Inertia;
 use App\Models\Photo;
 use Illuminate\Http\Request;
+use App\Actions\Photoze\StorePhoto;
+use App\Http\Requests\PhotoRequest;
+use App\Actions\Photoze\UpdatePhoto;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\UpdatePhotoRequest;
 
 class PhotoController extends Controller
 {
+    public function __construct(
+        protected StorePhoto $storePhoto,
+        protected UpdatePhoto $updatePhoto
+    ) {}
+
     public function index()
     {
-        return view('photoze.index')->with([
+        return Inertia::render('photoze/Index')->with([
             'photos' => Photo::all()
         ]);
     }
 
     public function create()
     {
-        return view('photoze.add');
+        return Inertia::render('photoze/AddPhoto');
     }
 
-    public function store(Request $request)
-    {
-        $photoPath = $request->file('name')->store('images/landing', 'public');
+    public function store(PhotoRequest $request)
+    {   
+        $this->storePhoto->handle($request);
 
-        Photo::create([
-            'photographer' => $request->photographer,
-            'name' => $photoPath,
-            'license' => $request->license
+        return to_route('photoze')->with([
+            'success' => 'Photeau added successfully'
         ]);
-
-        return redirect()->route('photoze')->with('success', 'Photo added successfully!');
     }
 
     public function edit(Photo $photo)
     {
-        return view('photoze.edit', compact('photo'));
+        return Inertia::render('photoze/EditPhoto')->with([
+            'photo' => Photo::where('id', $photo->id)->first()
+        ]);
     }
 
-    public function update(Request $request, Photo $photo)
+    public function update(UpdatePhotoRequest $request)
     {
-        $request->validate([
-            'photographer' =>  'required|string',
-            'license' =>  'required|string',
+        $this->updatePhoto->handle($request);
+        
+        return to_route('photoze')->with([
+            'success' => 'Photoh updated successfully'
         ]);
-
-        $photo->update($request->all());
-
-        return redirect()->route('photoze')->with('success', 'Photo details updated successfully!');
     }
 
     public function destroy(Photo $photo)
@@ -55,6 +60,8 @@ class PhotoController extends Controller
         Storage::delete('public/'.$photo->name);
         $photo->delete();
 
-        return redirect()->route('photoze')->with('success', 'Photo deleted successfully!');
+        return to_route('photoze')->with([
+            'success' => 'Photø deleted successfulleh'
+        ]);
     }
 }

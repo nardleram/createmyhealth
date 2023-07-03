@@ -1,27 +1,39 @@
 <template>
     <div class="mx-auto max-w-4xl min-w-[768px]">
         <div class="w-4/6 sm:1/2 mx-auto py-10 px-5 md:px-0">
-            <h1 class="mnarjeTitle">Edit “{{ event.title }}”</h1>
+            <h1 class="mnarjeTitle">Add an event</h1>
 
             <form @submit.prevent="submitEvent()">
                 <div class="w-full mb-4">
                     <label for="title" class="cmhLabel">title</label>
                     <input id="title" v-model="title" class="cmhInput font-serif text-base" type="text" required autofocus>
+                    <div v-if="usePage().props.errors.title">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.title }}</small>
+                    </div>
                 </div>
 
                 <div class="w-full mb-4">
                     <label for="date" class="cmhLabel">date</label>
                     <input id="date" v-model="date" class="cmhInput" type="text" required>
+                    <div v-if="usePage().props.errors.date">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.date }}</small>
+                    </div>
                 </div>
 
                 <div class="w-full mb-4">
                     <label for="time" class="cmhLabel">time</label>
                     <input id="time" v-model="time" class="cmhInput" type="text" required>
+                    <div v-if="usePage().props.errors.time">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.time }}</small>
+                    </div>
                 </div>
 
                 <div class="w-full mb-4">
                     <label for="location" class="cmhLabel">location</label>
                     <input id="location" v-model="location" class="cmhInput" type="text" required>
+                    <div v-if="usePage().props.errors.location">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.location }}</small>
+                    </div>
                 </div>
 
                 <div class="w-full mb-4">
@@ -30,8 +42,11 @@
                 </div>
 
                 <div class="w-full mb-8 h-14">
-                    <label for="image" class="block mb-1 pl-2 text-lmhlMain1 text-xs lowercase tracking-tight">Replace current image</label>
-                    <input id="image" name="image" type="file" class="w-full text-slate-500 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:bg-transparent file:border-0 file:bg-slate-700 file:mr-4 file:py-4 file:px-4 file:text-slate-300">
+                    <label for="name" class="block mb-1 pl-2 text-lmhlMain1 text-xs lowercase tracking-tight">Select image</label>
+                    <input id="image" name="image" type="file" class="w-full text-slate-500 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:bg-transparent file:border-0 file:bg-gray-700 file:mr-4 file:py-4 file:px-4 file:text-slate-300" required>
+                    <div v-if="usePage().props.errors.image">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.image }}</small>
+                    </div>
                 </div>
 
                 <input type="hidden" id="eventId" value="0" />
@@ -44,14 +59,14 @@
                     <EditorContent id="editorDiv" :editor="editor" class="bg-lmhlBgInput max-h-80 overflow-y-scroll mb-2 border border-slate-400 rounded-md p-2"/>
                 </div>
 
-                <button @click="submitEvent()" type="submit" class="w-full mx-auto mt-8 px-8 py-2 bg-success-600 text-lmhlBg1 rounded-md shadow-md hover:bg-success-700 transition-colors delay-100 duration-250">Update</button>
+                <button @click="submitEvent()" type="submit" class="w-full mx-auto mt-8 px-8 py-2 bg-success-600 text-lmhlBg1 rounded-md shadow-md hover:bg-success-700 transition-colors delay-100 duration-250">Save</button>
             </form>
         </div>
     </div>
 </template>
 
 <script>
-import Layout from '../Pages/layouts/Layout.vue'
+import Layout from '../layouts/Layout.vue'
 
 export default {
     layout: Layout
@@ -61,7 +76,7 @@ export default {
 <script setup>
 import { useForm, usePage } from '@inertiajs/vue3'
 import { ref } from 'vue'
-import EventMenubar from '../Pages/components/EventMenuBar.vue'
+import EventMenubar from '../components/EventMenuBar.vue'
 import { Editor, EditorContent } from '@tiptap/vue-3'
 import Document from '@tiptap/extension-document'
 import Text from '@tiptap/extension-text'
@@ -77,38 +92,33 @@ import OrderedList from '@tiptap/extension-ordered-list'
 import ListItem from '@tiptap/extension-list-item'
 import Bold from '@tiptap/extension-bold'
 import Italic from '@tiptap/extension-italic'
-import EventDetailsParagraph from '../composables/eventDetailsParagraph.js'
+import EventDetailsParagraph from '../../composables/eventDetailsParagraph.js'
 import TextStyle from '@tiptap/extension-text-style'
 import { Color } from '@tiptap/extension-color'
 import Link from '@tiptap/extension-link'
 
-const props = defineProps({
-    event: Object
-})
-
 const editor = ref(null)
-const title = ref(usePage().props.event.title)
-const date = ref(usePage().props.event.date)
-const time = ref(usePage().props.event.time)
-const location = ref(usePage().props.event.location)
-const info = ref(usePage().props.event.info)
+const title = ref('')
+const date = ref('')
+const time = ref('')
+const location = ref('')
+const info = ref('')
 
 const submitEvent = function () {
     let htmlBody = editor.value.getHTML()
 
     let payload = useForm({
-        'id': usePage().props.event.id,
         'title': title.value,
         'date': date.value,
         'time': time.value,
         'location': location.value,
         'info': info.value,
         'details': htmlBody,
-        'image': image.files[0] ?? null,
+        'image': image.files[0],
     })
 
     try {
-        payload.patch('/events/update', {
+        payload.post('/events/store', {
             onSuccess: () => {
                 title.value = ''
                 date.value = ''
@@ -117,7 +127,7 @@ const submitEvent = function () {
                 info.value = ''
                 editor.value.destroy()
                 editor.value = new Editor({
-                    content: '<p>You enter the event details a visitor can read when clicking the event card\’s  "View details..." button here. But remember, nothing fancy. KISS! Keep it simple, stupid!</p>',
+                    content: '<p>Here you enter the event details a visitor can read after clicking the event card\’s  "View details..." button. But remember, nothing fancy. KISS! Keep it simple, stupid!</p>',
                     extensions: [
                         Document,
                         EventDetailsParagraph,
@@ -149,7 +159,7 @@ const submitEvent = function () {
 }
 
 editor.value = new Editor({
-    content: usePage().props.event.details,
+    content: '<p>Here you enter the event details a visitor can read after clicking the event card\’s  "View details..." button. But remember, nothing fancy. KISS! Keep it simple, stupid!</p>',
     extensions: [
         Document,
         EventDetailsParagraph,
@@ -205,7 +215,7 @@ const onSetLink = () => {
 }
 </script>
 
-<style>
+<style scoped>
 .ProseMirror,p {
     font-size: 14px;
     color: rgb(51 65 85);

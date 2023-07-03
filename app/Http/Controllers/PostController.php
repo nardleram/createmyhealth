@@ -11,40 +11,31 @@ use App\Actions\Posts\StorePost;
 use App\Http\Requests\PostRequest;
 use App\Actions\Categories\StorePostCategories;
 use App\Actions\Categories\UpdatePostCategories;
+use App\Actions\Posts\DeletePost;
 use App\Actions\Posts\UpdatePost;
 use App\Models\CategoryPost;
 
 class PostController extends Controller
 {
     public function __construct(
-        private StorePost $storePost,
-        private StorePostCategories $storePostCats,
-        private UpdatePost $updatePost,
-        private UpdatePostCategories $updatePostCats
+        protected StorePost $storePost,
+        protected StorePostCategories $storePostCats,
+        protected UpdatePost $updatePost,
+        protected UpdatePostCategories $updatePostCats,
+        protected DeletePost $deletePost
     ) {}
 
     public function index()
     {
-        return view('posts.index')->with([
-            'posts' => Post::with('categories')->get()
-        ]);
-    }
-
-    public function test()
-    {
-        return Inertia::render('Test', [
-            'categories' => Category::all(),
-            'success' => null,
-            'error' => null
+        return Inertia::render('posts/Index')->with([
+            'posts' => Post::with('categories')->orderBy('created_at')->get()
         ]);
     }
 
     public function create()
     {
-        return Inertia::render('AddPost', [
-            'categories' => Category::all(),
-            'success' => null,
-            'error' => null
+        return Inertia::render('posts/AddPost', [
+            'categories' => Category::all()
         ]);
     }
 
@@ -56,20 +47,17 @@ class PostController extends Controller
             $this->storePostCats->handle($request, $post);
         }
 
-        return view('posts.index')->with([
-            'posts' => Post::with('categories')->get(),
-            'success' => 'Post added successfully!'
+        return to_route('posts')->with([
+            'success' => 'Post added successfully'
         ]);
     }
 
     public function edit(Post $post)
     {
-        return Inertia::render('EditPost', [
+        return Inertia::render('posts/EditPost', [
             'post' => Post::where('id', $post->id)->first(),
             'categories' => Category::all(),
-            'checkedCats' => CategoryPost::where('post_id', $post->id)->get(),
-            'success' => null,
-            'error' => null
+            'checkedCats' => CategoryPost::where('post_id', $post->id)->get()
         ]);
     }
 
@@ -79,23 +67,17 @@ class PostController extends Controller
 
         $this->updatePostCats->handle($request, $post);
 
-        return view('posts.index')->with([
-            'posts' => Post::with('categories')->get(),
-            'success' => 'Post updated successfully!'
+        return to_route('posts')->with([
+            'success' => 'Post updated successfully'
         ]);
     }
 
     public function destroy(Post $post)
     {
-        Image::where('imageable_id', $post->id)
-            ->where('imageable_type', 'App\\Models\\Post')
-            ->delete();
+        $this->deletePost->handle($post);
 
-        $post->delete();
-
-        return view('posts.index')->with([
-            'posts' => Post::with('categories')->get(),
-            'success' => 'Post deleted successfully!'
+        return to_route('posts')->with([
+            'success' => 'Post deleted successfully'
         ]);
     }
 }

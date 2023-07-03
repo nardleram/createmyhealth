@@ -70,7 +70,9 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/categories/index', [CategoryController::class, 'index'])->name('categories');
     Route::get('/categories/add', [CategoryController::class, 'create'])->name('addCategory');
+    Route::get('/categories/edit/{category}', [CategoryController::class, 'edit'])->name('editCategory');
     Route::post('/categories/store', [CategoryController::class, 'store'])->name('storeCategory');
+    Route::patch('/categories/update', [CategoryController::class, 'update'])->name('updateCategory');
     Route::delete('/categories/delete/{category}', [CategoryController::class, 'destroy'])->name('deleteCategory');
 
     Route::get('/schedules/index', [ScheduleController::class, 'index'])->name('schedules');
@@ -79,6 +81,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/photoze/add', [PhotoController::class, 'create'])->name('addPhoto');
     Route::post('/photoze/store', [PhotoController::class, 'store'])->name('storePhoto');
     Route::get('/photoze/edit/{photo}', [PhotoController::class, 'edit'])->name('editPhoto');
-    Route::put('/photoze/{photo}', [PhotoController::class, 'update'])->name('updatePhoto');
+    Route::patch('/photoze/{photo}', [PhotoController::class, 'update'])->name('updatePhoto');
     Route::delete('/photoze/delete/{photo}', [PhotoController::class, 'destroy'])->name('deletePhoto');
 });

@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Actions\Events\DeleteEvent;
 use Inertia\Inertia;
 use App\Models\Event;
-use App\Models\Image;
-use Illuminate\Http\Request;
 use App\Actions\Events\StoreEvent;
 use App\Actions\Events\UpdateEvent;
 use App\Http\Requests\EventRequest;
@@ -22,31 +20,28 @@ class EventController extends Controller
 
     public function index()
     {
-        return view('events.index')->with([
-            'events' => Event::all(),
+        return Inertia::render('events/Index', [
+            'events' => Event::all()->sortBy('id', SORT_NUMERIC, true),
         ]);
     }
 
     public function create()
     {
-        return Inertia::render('AddEvent', [
-            'success' => null,
-            'error' => null
-        ]);
+        return Inertia::render('events/AddEvent');
     }
 
     public function store(EventRequest $request)
     {
         $this->storeEvent->handle($request);
 
-        return Inertia::location(route('events', [
-            'events' => Event::all()
-        ]));
+        return to_route('events')->with([
+            'success' => 'Event added succesfully'
+        ]);
     }
 
     public function edit(Event $event)
     {
-        return Inertia::render('EditEvent', [
+        return Inertia::render('events/EditEvent', [
             'event' => Event::where('id', $event->id)->with('images')->first()
         ]);
     }
@@ -55,17 +50,17 @@ class EventController extends Controller
     {
         $this->updateEvent->handle($request);
 
-        return Inertia::location(route('events', [
-            'events' => Event::all()
-        ]));
+        return to_route('events')->with([
+            'success' => 'Event updated succesfully'
+        ]);
     }
 
     public function destroy(Event $event)
     {
         $this->deleteEvent->handle($event);
 
-        return Inertia::location(route('events', [
-            'events' => Event::all()
-        ]));
+        return to_route('events')->with([
+            'success' => 'Event deleted succesfully'
+        ]);
     }
 }

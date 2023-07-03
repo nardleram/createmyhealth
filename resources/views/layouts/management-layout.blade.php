@@ -17,15 +17,15 @@
     </head>
 
     <body class="antialiased bg-lmhlBg1 font-sans text-lmhlMainTextColorDark1">
-        @if (session('success'))
+        @if ($success)
             <div id="success" class="successMessage">
-                {{ session('success') }}
+                {{ $success }}
             </div>
         @endif
 
-        @if (session('error'))
+        @if ($error)
             <div id="error" class="errorMessage">
-                {{ session('error') }}
+                {{ $error }}
             </div>
         @endif
 
