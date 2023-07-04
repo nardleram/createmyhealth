@@ -46,7 +46,7 @@
         @foreach ($events as $event)
         <x-event-card>
             <x-slot:image>
-                <img class="mb-0 min-h-full rounded-tl-md object-fill" src="{{ $event->images->first()->url }}" alt="Event image">
+                <img class="mb-0 min-h-full rounded-tl-md object-fill" src="/storage/{{ $event->images->first()->url }}" alt="Event image">
             </x-slot>
 
             <x-slot:name>{{ $event->title }}</x-slot>
