@@ -7,7 +7,7 @@
         <img class="w-full" src="/storage/images/events.jpeg" alt="Events image">
     </div>
 
-    <h1 class="font-serif text-3xl text-center my-8">Events [Temporarily down for maintenance!]</span></h1>
+    <h1 class="font-serif text-3xl text-center my-8">Events</span></h1>
 
     <div class="top-0 left-0 w-full h-full hidden profile-popup-bg z-40 bg-black opacity-95 origin-center animate-open-bio-bg">
         @foreach ($events as $event)
