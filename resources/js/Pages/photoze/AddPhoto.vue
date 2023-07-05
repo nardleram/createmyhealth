@@ -22,7 +22,7 @@
 
                 <div class="w-full mb-4 h-14">
                     <label for="name" class="block mb-1 pl-2 text-lmhlMain1 text-xs lowercase tracking-tight">Select photograph</label>
-                    <input id="photo" type="file" class="w-full text-slate-600 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:bg-transparent file:border-0 file:bg-slate-700 file:mr-4 file:py-4 file:px-4 file:text-slate-400" required>
+                    <input id="photo" type="file" class="w-full text-slate-600 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:border-0 file:bg-slate-600 file:mr-4 file:py-4 file:px-4 file:text-slate-300" required>
                     <div v-if="usePage().props.errors.photo">
                         <small class="text-red-700 font-semibold">{{ usePage().props.errors.photo }}</small>
                     </div>

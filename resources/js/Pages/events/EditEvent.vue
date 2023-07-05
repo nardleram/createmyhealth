@@ -31,7 +31,7 @@
 
                 <div class="w-full mb-8 h-14">
                     <label for="image" class="block mb-1 pl-2 text-lmhlMain1 text-xs lowercase tracking-tight">Replace current image</label>
-                    <input id="image" name="image" type="file" class="w-full text-slate-500 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:bg-transparent file:border-0 file:bg-gray-600 file:mr-4 file:py-4 file:px-4 file:text-slate-300">
+                    <input id="image" name="image" type="file" class="w-full text-slate-500 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:border-0 file:bg-slate-600 file:mr-4 file:py-4 file:px-4 file:text-slate-300">
                 </div>
 
                 <input type="hidden" id="eventId" value="0" />
@@ -41,7 +41,7 @@
 
                     <EventMenubar v-if="editor" :editor="editor" @set-link="onSetLink()"/>
 
-                    <EditorContent id="editorDiv" :editor="editor" class="bg-lmhlBgInput max-h-80 overflow-y-scroll mb-2 border border-slate-400 rounded-md p-2"/>
+                    <EditorContent id="editorDiv" :editor="editor" class="editor__content bg-lmhlBgInput max-h-80 overflow-y-scroll mb-2 border border-slate-400 rounded-md p-2"/>
                 </div>
 
                 <button @click="submitEvent()" type="submit" class="w-full mx-auto mt-8 px-8 py-2 bg-success-600 text-lmhlBg1 rounded-md shadow-md hover:bg-success-700 transition-colors delay-100 duration-250">Update</button>
@@ -204,70 +204,3 @@ const onSetLink = () => {
         .run()
 }
 </script>
-
-<style scoped>
-.ProseMirror,p {
-    font-size: 14px;
-    color: rgb(51 65 85);
-}
-.ProseMirror,table {
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-     
-.ProseMirror,td,th {
-    min-width: 1em;
-    border: 1px solid rgb(148 163 184);
-    padding: 2px 3px;
-    vertical-align: top;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.ProseMirror,th {
-    font-weight: bold;
-    text-align: left;
-}
-
-.ProseMirror,td {
-    font-weight: 400;
-} 
-
-.selectedCell:after {
-    z-index: 2;
-    position: absolute;
-    content: "";
-    left: 0; right: 0; top: 0; bottom: 0;
-    pointer-events: none;
-}
-
-.column-resize-handle {
-    position: absolute;
-    right: -2px;
-    top: 0;
-    bottom: -2px;
-    width: 4px;
-    pointer-events: none;
-}
-
-.tableWrapper {
-    padding: 1rem 0;
-    overflow-x: auto;
-}
-
-.resize-cursor {
-    cursor: ew-resize;
-    cursor: col-resize;
-}
-
-.proseMirror, a {
-    color: rgb(227 181 205);
-}
-
-.proseMirror, a:hover {
-    color: rgb(213 144 180);
-}
-</style>
