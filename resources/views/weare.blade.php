@@ -143,7 +143,7 @@
 
             <x-slot:name>Emily Godfrey</x-slot>
 
-            <x-slot:roles>Co-founder, Director</x-slot>
+            <x-slot:roles>Co-founder</x-slot>
         </x-director-profile-card>
 
         <x-director-profile-card class="from-anais_profile_bg1 to-anais_profile_bg2">

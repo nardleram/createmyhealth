@@ -35,7 +35,7 @@ class PhotoController extends Controller
         $this->storePhoto->handle($request);
 
         return to_route('photoze')->with([
-            'success' => 'Photeau added successfully'
+            'success' => 'Photeau hydrated successfully'
         ]);
     }
 

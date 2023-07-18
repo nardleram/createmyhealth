@@ -239,6 +239,10 @@ const onSetLink = () => {
 
     .ProseMirror {
         .tableWrapper {
+            p {
+                font-size: 13px;
+            }
+
             tbody {
                 border-collapse: collapse;
                 table-layout: fixed;
@@ -247,12 +251,12 @@ const onSetLink = () => {
                 overflow: hidden;
 
                 td, th {
-                min-width: 1em;
-                border: thin solid silver;
-                padding: 2px 3px;
-                vertical-align: top;
-                box-sizing: border-box;
-                position: relative;
+                    min-width: 1em;
+                    border: thin solid silver;
+                    padding: 2px 3px;
+                    vertical-align: top;
+                    box-sizing: border-box;
+                    position: relative;
 
                     > * {
                         margin-bottom: 0;
