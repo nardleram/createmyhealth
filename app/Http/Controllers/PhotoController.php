@@ -51,7 +51,7 @@ class PhotoController extends Controller
         $this->updatePhoto->handle($request);
         
         return to_route('photoze')->with([
-            'success' => 'Photoh updated successfully'
+            'success' => 'Photoh updated successfulleee'
         ]);
     }
 

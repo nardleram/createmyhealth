@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Actions\Events\DeleteEvent;
 use Inertia\Inertia;
 use App\Models\Event;
+use Illuminate\Http\Request;
 use App\Actions\Events\StoreEvent;
+use App\Actions\Events\DeleteEvent;
 use App\Actions\Events\UpdateEvent;
 use App\Http\Requests\EventRequest;
 use App\Http\Requests\UpdateEventRequest;
@@ -46,7 +47,7 @@ class EventController extends Controller
         ]);
     }
 
-    public function update(UpdateEventRequest $request)
+    public function update(Request $request)
     {
         $this->updateEvent->handle($request);
 

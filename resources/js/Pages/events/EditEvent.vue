@@ -32,6 +32,9 @@
                 <div class="w-full mb-8 h-14">
                     <label for="image" class="block mb-1 pl-2 text-lmhlMain1 text-xs lowercase tracking-tight">Replace current image</label>
                     <input id="image" name="image" type="file" class="w-full text-slate-500 text-sm tracking-tight font-medium bg-lmhlBgInput shadow-sm rounded-lg focus:outline-1 focus:outline-lmhlMain1 border border-slate-400 focus:shadow-md file:border-0 file:bg-slate-600 file:mr-4 file:py-4 file:px-4 file:text-slate-300">
+                    <div v-if="usePage().props.errors.image">
+                        <small class="text-red-700 font-semibold">{{ usePage().props.errors.image }}</small>
+                    </div>
                 </div>
 
                 <input type="hidden" id="eventId" value="0" />
@@ -104,11 +107,11 @@ const submitEvent = function () {
         'location': location.value,
         'info': info.value,
         'details': htmlBody,
-        'image': image.files[0] ?? null,
+        'image': image.files[0],
     })
 
     try {
-        payload.patch('/events/update', {
+        payload.post('/events/update', {
             onSuccess: () => {
                 title.value = ''
                 date.value = ''

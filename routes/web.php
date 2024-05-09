@@ -20,8 +20,8 @@ Route::get('/weare', function () {
     return view('weare');
 });
 
-Route::get('/learning', function () {
-    return view('learning');
+Route::get('/stories', function () {
+    return view('stories');
 });
 
 Route::get('/events', function () {
@@ -57,7 +57,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/events/add', [EventController::class, 'create'])->name('addEvent');
     Route::post('/events/store', [EventController::class, 'store'])->name('storeEvent');
     Route::get('/events/edit/{event}', [EventController::class, 'edit'])->name('editEvent');
-    Route::patch('/events/update', [EventController::class, 'update'])->name('updateEvent');
+    Route::post('/events/update', [EventController::class, 'update'])->name('updateEvent');
     Route::delete('/events/delete/{event}', [EventController::class, 'destroy'])->name('deleteEvent');
 
     Route::get('/posts/index', [PostController::class, 'index'])->name('posts');

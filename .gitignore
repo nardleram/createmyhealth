@@ -7,7 +7,8 @@ public/css/app.css
 public/mix-manifest.json
 public/js/app.js.LICENSE.txt
 /storage/*.key
-
+/storage/.DS_Store
+.DS_Store
 /vendor
 .env
 .env.backup
